@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="uD391iwXa0umnllfaXM4-g" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/YfWElhz9ZkmdngcKjOQMFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-3851, -93, 3862, 2110" BrowserType="Chrome" ContentHash="HPNOc2iN7EqOFN5CByuA1A" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAtlJREFUWEe1l9tt6zAMhjlCR+gIHaEjZIS8FLDUAPUG7QbJBu0GORtkhI7gEQI0vvQtBx9NOYpiO27q/oARmJbE209SEUlwzOWu9LKsvLx1z0oWTSb36drZgZLKSVE52VdePksnOx59d3LUb17em5U8pntnAQpqJ0Wft8jKTJaVk60Z1BrTs/Ym2OH7qQey3qJzrJ1sfx2V4FEqvwaNjJMPM2R3kyGHlTxywFTv+xAb8uPUlJlssD6V34LYkMbLa/q9FzCeckvlMSjPfS53qXwIcARCc/ZoNDjUwj+au9JJXjlZpPIxRNGgsvrPD/kf8g5S1U5ymtO3l5f6WdajHvXgkMnbYEq+nCwov1QeUHvZHjLZQCwe+FJ62aTrrqEr89QIcj9GQN1oLZkw/pjhEconecAIInoSkqNM/p2tjKAcMe95SEG65hqMZ8ofi8SJc4R4LKRs1q4XPekacBHaCDZjujRrSp0Uyjttp1EJRt4Scg01RAzeI6MkUagyJ3kgMu97lMEVqoZzXDtJ+R50WETaVFwYYAfBC6y0vB0hnw2iIhAKAlMdwQCNkD+tD56mBgA9j9T3GUB+Qn9QAtrmcBBe0WTK1ot1MCBe0+Ryb/JBA5T8fQbACYtCcYD57aDJUaaKn+SBtARCYZAqRWYRuGaARtLL8oKE5jWt+R1FyKLRu0Wmj11WyLWucfKh7779puTFGCtbZJ0OL6/dvYONTTSGQwrC+9zoOIX3IG1EeITl8aa5YJHYV1k0+CyPxdnKP4Cl7Vw5CCQbGkZzoPbyotxKlYOp4/gW0LCoHHrGUAdV2G34NCBmgHZPzr12IQFzX8msBR+5B6TfezEHD8J8sO64Cz1kMuzf0DSLI6SKcSZdMwmHtudP/mNiOWY46f+BmxUHEP6xW6x6yv3wWdZazzDb68T7neIYKI6mHEOKgbTV2dAOnTa/mSwxKN0/G2yu60Tkl/aMp3+h9D/NKbJFTGfQ5gAAAABJRU5ErkJggg==" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/YfWElhz9ZkmdngcKjOQMFw" Selector="&lt;html app='chrome.exe' title='Postcode zoeken | PostNL' /&gt;" Url="https://www.postnl.nl/postcode-zoeken/" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="c5b1e15fdc44c5a33cdd1baaedd787d2.jpg" xmlns="">0Uxy3ycuJQkS_93JpIiVPIQ</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,6 @@
+{
+  "Name": "Ciphix_air",
+  "ProjectType": "Process",
+  "Description": "Hi there and welcome to the Ciphix RPA case! In this brief, we will present\r\nyou with a short RPA use case, after which you will build a small robot in\r\nUiPath of your own to solve the case. Be as creative as you want with this!\r\nAs with most RPA cases, there is not just one solution or one correct way to\r\ngo about this case. That being said, let’s dive in!",
+  "MainFile": "Main.xaml"
+}

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome Postcode zoeken  PostNL",
+  "Type": "App",
+  "Id": "qcKCoQofp0C96jZV39jtPA",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/qcKCoQofp0C96jZV39jtPA",
+  "Created": "2026-03-13T08:20:05.9713213Z",
+  "Updated": "2026-03-13T08:20:05.9713213Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Ciphix_air",
+  "projectId": "9e6c7fb5-3347-4a57-9a3b-7bd9fb614c5d",
+  "description": "Hi there and welcome to the Ciphix RPA case! In this brief, we will present\r\nyou with a short RPA use case, after which you will build a small robot in\r\nUiPath of your own to solve the case. Be as creative as you want with this!\r\nAs with most RPA cases, there is not just one solution or one correct way to\r\ngo about this case. That being said, let’s dive in!",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "3.3.1",
+    "UiPath.MicrosoftOffice365.Activities": "[3.7.10]",
+    "UiPath.System.Activities": "[26.2.0]",
+    "UiPath.UIAutomation.Activities": "25.10.20",
+    "UiPath.Word.Activities": "2.3.1"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.188.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "ec1612a8-a2b8-4079-82b4-6bea0348dd73",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

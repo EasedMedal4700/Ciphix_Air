@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Postcode zoeken  PostNL",
+  "Type": "Screen",
+  "Id": "YfWElhz9ZkmdngcKjOQMFw",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/YfWElhz9ZkmdngcKjOQMFw",
+  "ParentRef": "LnKYQ0Mj0U6SNXzj59kEmQ/APCy1G37SEGHXi2wFIcsbw",
+  "Created": "2026-03-13T08:20:06.007485Z",
+  "Updated": "2026-03-13T08:20:06.007485Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
