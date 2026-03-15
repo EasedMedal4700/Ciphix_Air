@@ -273,11 +273,11 @@
       <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
       <AssemblyReference>netstandard</AssemblyReference>
       <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
       <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
       <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -286,7 +286,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1826,3265.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1826,2714.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="transactionDataTable" />
       <Variable x:TypeArguments="x:String" Name="dataTableString" />
@@ -359,13 +359,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,2961.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,2410.6666666666665" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,2786.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,2236" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="FirstName" />
               <Variable x:TypeArguments="x:String" Name="LastName" />
@@ -414,7 +414,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,746" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,594" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -512,7 +512,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_35">
+              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_35">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">FlightDate</CSharpReference>
@@ -525,7 +525,7 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -598,7 +598,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,249.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,200" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -722,7 +722,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng abck to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,1440.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng abck to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,1091.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="isFlightDateValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isAgeValid" />
@@ -831,7 +831,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate FlightDate" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_44">
+              <Assign DisplayName="Validate FlightDate" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_44">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">isFlightDateValid</CSharpReference>
@@ -844,20 +844,20 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Sequence sap2010:Annotation.AnnotationText="Create an If activity to validate Age.&#xD;&#xA;&#xD;&#xA;Step 1:&#xD;&#xA;Check if Age can be converted to an integer using Integer.TryParse.&#xD;&#xA;&#xD;&#xA;Step 2:&#xD;&#xA;If the conversion succeeds, check if the parsed value is between 0 and 120.&#xD;&#xA;Both 0 and 120 are valid values.&#xD;&#xA;&#xD;&#xA;Step 3:&#xD;&#xA;If the value is within this range, set isAgeValid = True.&#xD;&#xA;Otherwise set isAgeValid = False.&#xD;&#xA;&#xD;&#xA;Step 4:&#xD;&#xA;If the Age cannot be converted to an integer, set isAgeValid = False.&#xD;&#xA;&#xD;&#xA;Keep activity titles short.&#xD;&#xA;Do not create extra sequences." DisplayName="valdiate age" sap:VirtualizedContainerService.HintSize="450,462.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_26">
+              <Sequence sap2010:Annotation.AnnotationText="Create an If activity to validate Age.&#xD;&#xA;Step 1: Check if Age can be converted to an integer using Integer.TryParse.&#xD;&#xA;Step 2: If the conversion succeeds, check if the parsed value is between 0 and 120.&#xD;&#xA;Both 0 and 120 are valid values.&#xD;&#xA;Step 3: If the value is within this range, set isAgeValid = True.&#xD;&#xA;Otherwise set isAgeValid = False.&#xD;&#xA;Step 4: If the Age cannot be converted to an integer, set isAgeValid = False. " DisplayName="valdiate age" sap:VirtualizedContainerService.HintSize="450,232.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_26">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Int32" Name="parsedAge" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If DisplayName="Validate Age" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_3">
@@ -877,6 +877,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If DisplayName="Check if age is within range" sap:VirtualizedContainerService.HintSize="452,585.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
@@ -935,6 +936,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Assign DisplayName="Set isAgeValid to False" sap:VirtualizedContainerService.HintSize="452,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_43">
