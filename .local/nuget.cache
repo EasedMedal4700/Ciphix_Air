@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6uuefoZD1JE=",
+  "dgSpecHash": "1Aj7aFoW59w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_air_UI\\.local\\",
+  "projectFilePath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_Air\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
@@ -290,9 +290,9 @@
     "C:\\Users\\USER\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.9.1\\uipath.opentelemetry.contracts.2.9.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\uipath.platform\\25.12.1\\uipath.platform.25.12.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\uipath.plugin.activities.tracing\\0.5.0\\uipath.plugin.activities.tracing.0.5.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0\\uipath.system.activities.26.2.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.0\\uipath.system.activities.runtime.26.2.0.nupkg.sha512",
-    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\uipath.system.activities.runtime.windows.26.2.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1\\uipath.system.activities.26.2.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.1\\uipath.system.activities.runtime.26.2.1.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\uipath.system.activities.runtime.windows.26.2.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\uipath.telemetry.client\\2.9.1\\uipath.telemetry.client.2.9.1.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.20\\uipath.uiautomation.activities.25.10.20.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\uipath.uiautomation.activities.runtime.25.10.20.nupkg.sha512",

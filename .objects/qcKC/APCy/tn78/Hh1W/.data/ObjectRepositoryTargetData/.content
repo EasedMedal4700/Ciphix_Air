@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wVE2g8q0F0CyQe9uOlrAvA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" CvElementArea="693, 684, 364, 47" CvType="InputBox" DesignTimeRectangle="695, 686, 360, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Woonplaats' shadowhostid='' tag='INPUT' type='text' class='stamp-text-input stamp-text-input--size-full' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8bb612c9-fe6a-4af3-9b86-86493b24cc60" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" CvTextArea="693, 660, 89, 19" CvTextArgument="Woonplaats" CvType="Text" DesignTimeRectangle="695, 659, 86, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl aaname='Woonplaats' shadowhostid='' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Woonplaats' /&gt;" Guid="f313acf4-8ab7-4a4d-8f9e-e4b6fe1bd725" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d01f395537cf4e20d106e4240579abea.png" xmlns="">0cvBV5x2zwkKfPAX7MfepJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

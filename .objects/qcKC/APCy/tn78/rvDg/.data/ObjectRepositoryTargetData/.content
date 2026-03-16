@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="T9g9rL4dYkCxWEsSM3Q-Vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="85002361-4338-41ec-9053-080511e25f14" CvElementArea="693, 816, 304, 82" CvType="Button" DesignTimeRectangle="695, 818, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="ae468de2-715b-46fc-8af6-b1eb58677ae9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="95fda1765e6f4882671cb9c4ab6ce386.png" xmlns="">08pjL2Iad4kyMKM2nSQ1DBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

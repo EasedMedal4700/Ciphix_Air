@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Zoeken",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "FxQu3t374kqoBlECDRFq5A",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/FxQu3t374kqoBlECDRFq5A",
+  "ParentRef": "LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg",
+  "Created": "2026-03-16T15:20:21.328427Z",
+  "Updated": "2026-03-16T15:20:21.328427Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
