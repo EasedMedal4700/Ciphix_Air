@@ -112,7 +112,7 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "26.2.0"
+        "Version": "26.2.1"
       },
       "Assemblies": [
         "C:\\Users\\USER\\.nuget\\packages\\csvhelper\\33.0.1\\lib/net8.0/CsvHelper.dll",
@@ -200,16 +200,16 @@
         "C:\\Users\\USER\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.9.1\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.platform\\25.12.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.0\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1\\lib/net6.0-windows7.0/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1\\lib/net6.0-windows7.0/UiPath.System.Activities.ViewModels.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.1\\lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib/net6.0-windows7.0/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib/net6.0-windows7.0/UiPath.ServiceClients.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib/net6.0-windows7.0/UiPath.System.Activities.Api.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib/net6.0-windows7.0/UiPath.System.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.telemetry.client\\2.9.1\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0"
+      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1"
     },
     {
       "Package": {
@@ -243,9 +243,9 @@
         "C:\\Users\\USER\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.7\\lib/net6.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.appsignatures\\25.10.158.57528\\lib/net6.0-windows7.0/AppSignatures.Locator.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.codedworkflows\\24.10.1\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/concrt140.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/cvextern.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/Emgu.CV.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/libusb-1.0.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/msvcp140.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib/net6.0/msvcp140_1.dll",
@@ -269,21 +269,21 @@
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.20\\lib/net6.0-windows7.0/UiPath.Wizards.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.CV.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.ExternalIntegrations.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Migration.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime.design\\25.10.20\\lib/net6.0-windows7.0/UiPath.UIAutomation.Activities.Runtime.Design.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.design.recoverypanel\\25.10.20\\lib/net6.0/UiPath.UIAutomation.Design.RecoveryPanel.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities\\25.10.20"
     },
@@ -318,8 +318,8 @@
         "C:\\Users\\USER\\.nuget\\packages\\uipath.platform\\25.12.1\\lib/net6.0-windows7.0/UiPath.Platform.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.Activities.API.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.Activities.Design.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.Activities.ViewModels.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib/net6.0-windows7.0/UiPath.Word.dll",
         "C:\\Users\\USER\\.nuget\\packages\\xceed.document.net\\5.0.25228.6154\\lib/net5.0/Xceed.Document.NET.dll",
         "C:\\Users\\USER\\.nuget\\packages\\xceed.drawing.net\\1.0.25228.6154\\lib/net5.0/Xceed.Drawing.NET.dll",
@@ -4825,11 +4825,11 @@
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
-      "Version": "26.2.0",
+      "Version": "26.2.1",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime",
-          "Item2": "[26.2.0, )"
+          "Item2": "[26.2.1, )"
         },
         {
           "Item1": "CsvHelper",
@@ -4911,17 +4911,17 @@
     },
     "UiPath.System.Activities.Runtime": {
       "Id": "UiPath.System.Activities.Runtime",
-      "Version": "26.2.0",
+      "Version": "26.2.1",
       "Dependencies": [
         {
           "Item1": "UiPath.System.Activities.Runtime.Windows",
-          "Item2": "[26.2.0, )"
+          "Item2": "[26.2.1, )"
         }
       ]
     },
     "UiPath.System.Activities.Runtime.Windows": {
       "Id": "UiPath.System.Activities.Runtime.Windows",
-      "Version": "26.2.0",
+      "Version": "26.2.1",
       "Dependencies": [
         {
           "Item1": "CsvHelper",
@@ -7876,9 +7876,9 @@
         "Version": "1.4.0"
       },
       "Assemblies": [
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\concrt140.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\cvextern.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\Emgu.CV.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\libusb-1.0.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\msvcp140.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.emgucvbundle\\1.4.0\\lib\\net6.0\\msvcp140_1.dll",
@@ -7999,36 +7999,36 @@
     {
       "Package": {
         "Id": "UiPath.System.Activities",
-        "Version": "26.2.0"
+        "Version": "26.2.1"
       },
       "Assemblies": [
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.System.Activities.ViewModels.dll"
       ],
-      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.0"
+      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities\\26.2.1"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime",
-        "Version": "26.2.0"
+        "Version": "26.2.1"
       },
       "Assemblies": [
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Package.Runtime.dll"
       ],
-      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.0"
+      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime\\26.2.1"
     },
     {
       "Package": {
         "Id": "UiPath.System.Activities.Runtime.Windows",
-        "Version": "26.2.0"
+        "Version": "26.2.1"
       },
       "Assemblies": [
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.ServiceClients.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.ServiceClients.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.System.Activities.Api.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1\\lib\\net6.0-windows7.0\\UiPath.System.Activities.dll"
       ],
-      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.0"
+      "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.system.activities.runtime.windows\\26.2.1"
     },
     {
       "Package": {
@@ -8062,14 +8062,14 @@
       "Assemblies": [
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.Contracts.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.API.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.ExternalIntegrations.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Migration.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Migration.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\25.10.20"
     },
@@ -8101,9 +8101,9 @@
       "Assemblies": [
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.vision\\3.16.0"
     },
@@ -8115,8 +8115,8 @@
       "Assemblies": [
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.Activities.API.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.Activities.Design.dll",
-        "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.Activities.ViewModels.dll",
+        "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.Activities.dll",
         "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1\\lib\\net6.0-windows7.0\\UiPath.Word.dll"
       ],
       "Path": "C:\\Users\\USER\\.nuget\\packages\\uipath.word.activities\\2.3.1"

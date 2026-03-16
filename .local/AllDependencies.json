@@ -5178,7 +5178,7 @@
           "lib/net8.0-windows7.0/UiPath.Plugin.Activities.Tracing.dll": {}
         }
       },
-      "UiPath.System.Activities/26.2.0": {
+      "UiPath.System.Activities/26.2.1": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -5198,7 +5198,7 @@
           "System.Management.Automation": "7.2.24",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.Platform": "25.12.1",
-          "UiPath.System.Activities.Runtime": "26.2.0",
+          "UiPath.System.Activities.Runtime": "26.2.1",
           "UiPath.Telemetry.Client": "2.9.1",
           "net.adamec.lib.common.dmn.engine": "1.1.1"
         },
@@ -5251,10 +5251,10 @@
           }
         }
       },
-      "UiPath.System.Activities.Runtime/26.2.0": {
+      "UiPath.System.Activities.Runtime/26.2.1": {
         "type": "package",
         "dependencies": {
-          "UiPath.System.Activities.Runtime.Windows": "26.2.0"
+          "UiPath.System.Activities.Runtime.Windows": "26.2.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -5263,7 +5263,7 @@
           "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll": {}
         }
       },
-      "UiPath.System.Activities.Runtime.Windows/26.2.0": {
+      "UiPath.System.Activities.Runtime.Windows/26.2.1": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -11051,7 +11051,7 @@
           "lib/net8.0-windows7.0/UiPath.Plugin.Activities.Tracing.dll": {}
         }
       },
-      "UiPath.System.Activities/26.2.0": {
+      "UiPath.System.Activities/26.2.1": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -11071,7 +11071,7 @@
           "System.Management.Automation": "7.2.24",
           "UiPath.CodedWorkflows": "24.10.1",
           "UiPath.Platform": "25.12.1",
-          "UiPath.System.Activities.Runtime": "26.2.0",
+          "UiPath.System.Activities.Runtime": "26.2.1",
           "UiPath.Telemetry.Client": "2.9.1",
           "net.adamec.lib.common.dmn.engine": "1.1.1"
         },
@@ -11124,10 +11124,10 @@
           }
         }
       },
-      "UiPath.System.Activities.Runtime/26.2.0": {
+      "UiPath.System.Activities.Runtime/26.2.1": {
         "type": "package",
         "dependencies": {
-          "UiPath.System.Activities.Runtime.Windows": "26.2.0"
+          "UiPath.System.Activities.Runtime.Windows": "26.2.1"
         },
         "compile": {
           "lib/net6.0-windows7.0/_._": {}
@@ -11136,7 +11136,7 @@
           "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll": {}
         }
       },
-      "UiPath.System.Activities.Runtime.Windows/26.2.0": {
+      "UiPath.System.Activities.Runtime.Windows/26.2.1": {
         "type": "package",
         "dependencies": {
           "CsvHelper": "33.0.1",
@@ -21862,10 +21862,10 @@
         "uipath.plugin.activities.tracing.nuspec"
       ]
     },
-    "UiPath.System.Activities/26.2.0": {
-      "sha512": "j6A7PeEX/4eqkiOw442oL9nhjkAnsYn1j12bRuC3eXeglZ/9tQKu0oqQ8W2GUuH1siV4uJ2p6CzveWQAUqDAGQ==",
+    "UiPath.System.Activities/26.2.1": {
+      "sha512": "FundN+H80f5t2efcmH35z5y0hSH4Zsl9Bm1z9GDcsFRuAHxjYnogeZW4tZabwlR8ByADjPqfohjB1knrIBY2Cw==",
       "type": "package",
-      "path": "uipath.system.activities/26.2.0",
+      "path": "uipath.system.activities/26.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21886,27 +21886,27 @@
         "lib/net6.0-windows7.0/zh-TW/UiPath.System.Activities.Design.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.System.Activities.Design.resources.dll",
         "lib/net6.0/UiPath.System.Activities.ViewModels.dll",
-        "uipath.system.activities.26.2.0.nupkg.sha512",
+        "uipath.system.activities.26.2.1.nupkg.sha512",
         "uipath.system.activities.nuspec"
       ]
     },
-    "UiPath.System.Activities.Runtime/26.2.0": {
-      "sha512": "iG0vyIGvTedsxyyHxOJEbZioS+bv6mYFb+XW0jqEv7hv5lrJE/BJIZN0ojpAZXBVpomF0MYTwTkYxHf4hkg91g==",
+    "UiPath.System.Activities.Runtime/26.2.1": {
+      "sha512": "OWyguUhFctTfhifpm6o1sOnRaBMbAVvRZiW/R0Hka6zDsU+4RXiCLHManNA0KiZteJ4jf247D8oG+1XNoAK4Gg==",
       "type": "package",
-      "path": "uipath.system.activities.runtime/26.2.0",
+      "path": "uipath.system.activities.runtime/26.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net6.0-windows7.0/UiPath.System.Activities.Package.Runtime.dll",
         "lib/net6.0/UiPath.System.Activities.Package.Runtime.dll",
-        "uipath.system.activities.runtime.26.2.0.nupkg.sha512",
+        "uipath.system.activities.runtime.26.2.1.nupkg.sha512",
         "uipath.system.activities.runtime.nuspec"
       ]
     },
-    "UiPath.System.Activities.Runtime.Windows/26.2.0": {
-      "sha512": "WWvU9e+jpzXOASud/n+0El0BQbiM+SK5JsYHG4VjOlmFlYp/dOxCVFSO7DPW0Y/TCgurAqKqjCJenMm9MGMWrw==",
+    "UiPath.System.Activities.Runtime.Windows/26.2.1": {
+      "sha512": "xsnPX6ynOzGLymfBs4MXPVQhtktZYxNaRe1PhdcKzKRgOlRXJyfJabVThxk7+A5h54NVek4Byqkssb7AKzIOIQ==",
       "type": "package",
-      "path": "uipath.system.activities.runtime.windows/26.2.0",
+      "path": "uipath.system.activities.runtime.windows/26.2.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -21961,7 +21961,7 @@
         "lib/net6.0-windows7.0/zh-TW/UiPath.System.Activities.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.ServiceClients.resources.dll",
         "lib/net6.0-windows7.0/zu/UiPath.System.Activities.resources.dll",
-        "uipath.system.activities.runtime.windows.26.2.0.nupkg.sha512",
+        "uipath.system.activities.runtime.windows.26.2.1.nupkg.sha512",
         "uipath.system.activities.runtime.windows.nuspec"
       ]
     },
@@ -23028,7 +23028,7 @@
     "net8.0-windows7.0": [
       "UiPath.Excel.Activities >= 3.3.1 <= 3.3.1",
       "UiPath.MicrosoftOffice365.Activities >= 3.7.10 <= 3.7.10",
-      "UiPath.System.Activities >= 26.2.0 <= 26.2.0",
+      "UiPath.System.Activities >= 26.2.1 <= 26.2.1",
       "UiPath.UIAutomation.Activities >= 25.10.20 <= 25.10.20",
       "UiPath.Word.Activities >= 2.3.1 <= 2.3.1"
     ]
@@ -23041,9 +23041,9 @@
     "restore": {
       "projectUniqueName": "Ciphix_air",
       "projectName": "Ciphix_air",
-      "projectPath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_air_UI\\.local",
+      "projectPath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_Air\\.local",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_air_UI\\.local",
+      "outputPath": "C:\\Users\\USER\\dev\\UIpath Ciphix\\Ciphix_Air\\.local",
       "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -23068,7 +23068,7 @@
           "UiPath.System.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[26.2.0, 26.2.0]"
+            "version": "[26.2.1, 26.2.1]"
           },
           "UiPath.UIAutomation.Activities": {
             "include": "Runtime",
