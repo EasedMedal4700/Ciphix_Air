@@ -277,6 +277,7 @@
       <AssemblyReference>UiPath.MicrosoftOffice365</AssemblyReference>
       <AssemblyReference>Microsoft.Graph.Core</AssemblyReference>
       <AssemblyReference>Microsoft.Graph</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -285,7 +286,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="724,5117.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="780,4011.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="transactionDataTable" />
       <Variable x:TypeArguments="x:String" Name="dataTableString" />
@@ -296,8 +297,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="590.6666666666666,78.66666666666667" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="590.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData.xlsx">
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="520,78.66666666666667" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="520,57.333333333333336" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData.xlsx">
       <ui:ReadRange.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">transactionDataTable</CSharpReference>
@@ -310,7 +311,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadRange>
-    <Assign DisplayName="Rename the column 'Passengerid.' in the DataTable to 'Passengerid'" sap:VirtualizedContainerService.HintSize="590.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_33">
+    <Assign DisplayName="Rename the column 'Passengerid.' in the DataTable to 'Passengerid'" sap:VirtualizedContainerService.HintSize="520,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_33">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">transactionDataTable_Columns__Passengerid____ColumnName</CSharpReference>
@@ -323,12 +324,12 @@
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="cosnole log" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590.6666666666666,88" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+    <ui:CommentOut sap2010:Annotation.AnnotationText="cosnole log" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="520,88" sap2010:WorkflowViewState.IdRef="CommentOut_5">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_23">
           <sap:WorkflowViewStateService.ViewState>
@@ -358,13 +359,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,2309.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,3707.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,2157.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,3532.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="FirstName" />
               <Variable x:TypeArguments="x:String" Name="LastName" />
@@ -376,6 +377,8 @@
               <Variable x:TypeArguments="x:Boolean" Name="isRowValid" />
               <Variable x:TypeArguments="x:String" Name="pdfFileName" />
               <Variable x:TypeArguments="x:String" Name="Age" />
+              <Variable x:TypeArguments="x:String" Name="FlightNo" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dtInvalidRows" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -413,7 +416,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,594" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,770.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -529,7 +532,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign Age" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_36">
+              <Assign DisplayName="Assign Age" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_36">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">Age</CSharpReference>
@@ -546,6 +549,18 @@
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_68">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">
+                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_63">FlightNo</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_106">CurrentRow["FlightNo"].ToString()</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
               </Assign>
             </Sequence>
             <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
@@ -597,11 +612,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,200" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,578.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -642,11 +657,11 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Sequence_14">
+            <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="484,466.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -722,7 +737,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng back to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,982" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng back to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,1423.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="isFlightDateValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isAgeValid" />
@@ -831,7 +846,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Sequence sap2010:Annotation.AnnotationText="Refactor the UiPath workflow so the FlightDate string is parsed only once using DateTime.TryParseExact, eliminating duplicate parsing and If blocks. Log the input and parsed date, and set isFlightDateValid based on whether parsing succeeds and the date is tomorrow or later." sap:VirtualizedContainerService.HintSize="450,134.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_59">
+              <Sequence sap2010:Annotation.AnnotationText="Refactor the UiPath workflow so the FlightDate string is parsed only once using DateTime.TryParseExact, eliminating duplicate parsing and If blocks. Log the input and parsed date, and set isFlightDateValid based on whether parsing succeeds and the date is tomorrow or later." DisplayName="Validate FlightDate" sap:VirtualizedContainerService.HintSize="450,134.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_59">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Boolean" Name="isParsingSuccessful" />
                 </Sequence.Variables>
@@ -842,20 +857,37 @@
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info">
-                  <ui:LogMessage.Message>
-                    <InArgument x:TypeArguments="x:Object">
-                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">string.Concat("FlightDate: ", FlightDate, Environment.NewLine, "FlightDateParsed: ", FlightDateParsed, Environment.NewLine, "isParsingSuccessful: ", isParsingSuccessful, Environment.NewLine, "isFlightDateValid: ", isFlightDateValid)</CSharpValue>
-                    </InArgument>
-                  </ui:LogMessage.Message>
+                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info">
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_102">string.Concat("FlightDate: ", FlightDate, Environment.NewLine, "FlightDateParsed: ", FlightDateParsed, Environment.NewLine, "isParsingSuccessful: ", isParsingSuccessful, Environment.NewLine, "isFlightDateValid: ", isFlightDateValid)</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                    </Sequence>
+                  </ui:CommentOut.Body>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </ui:LogMessage>
-                <Assign DisplayName="Attempt to parse the FlightDate string into a DateTime object using the format &quot;dd-MM-yyyy&quot; and store the success status in isParsingSuccessful and the parsed date in FlightDateParsed." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_66">
+                </ui:CommentOut>
+                <Assign DisplayName="Attempt to parse the FlightDate string into a DateTime object using the format &quot;dd-MM-yyyy&quot; and store the success status in isParsingSuccessful and the parsed date in FlightDateParsed." sap:VirtualizedContainerService.HintSize="452,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_66">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:Boolean">
                       <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">isParsingSuccessful</CSharpReference>
@@ -873,7 +905,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
-                <If sap2010:Annotation.AnnotationText="if else for pasrign dat being valid" DisplayName="If isParsingSuccessful is true:" sap:VirtualizedContainerService.HintSize="416,78.66666666666667" sap2010:WorkflowViewState.IdRef="If_12">
+                <If sap2010:Annotation.AnnotationText="if else for pasrign dat being valid" DisplayName="If isParsingSuccessful is true:" sap:VirtualizedContainerService.HintSize="452,1026.6666666666667" sap2010:WorkflowViewState.IdRef="If_12">
                   <If.Condition>
                     <InArgument x:TypeArguments="x:Boolean">
                       <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">isParsingSuccessful</CSharpValue>
@@ -882,25 +914,18 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,461.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_60">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:LogMessage DisplayName="Log the successfully parsed FlightDateParsed value." sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info">
-                        <ui:LogMessage.Message>
-                          <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">string.Concat("succeeded to parse: ", FlightDateParsed.ToString())</CSharpValue>
-                          </InArgument>
-                        </ui:LogMessage.Message>
-                      </ui:LogMessage>
                       <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_67">
                         <Assign.To>
                           <OutArgument x:TypeArguments="s:DateTime">
@@ -921,25 +946,42 @@
                         </Assign.To>
                         <Assign.Value>
                           <InArgument x:TypeArguments="x:Boolean">
-                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">FlightDateParsed.Date &gt;= DateTime.Now.AddDays(1).Date</CSharpValue>
+                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">FlightDateParsed.Date &lt;= DateTime.Now.AddDays(1).Date</CSharpValue>
                           </InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info">
-                        <ui:LogMessage.Message>
-                          <InArgument x:TypeArguments="x:Object">
-                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">string.Concat("FlightDate: ", FlightDate, Environment.NewLine, "FlightDateParsed: ", FlightDateParsed, Environment.NewLine, "isParsingSuccessful: ", isParsingSuccessful, Environment.NewLine, "isFlightDateValid: ", isFlightDateValid)</CSharpValue>
-                          </InArgument>
-                        </ui:LogMessage.Message>
-                      </ui:LogMessage>
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info">
+                              <ui:LogMessage.Message>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_103">string.Concat("FlightDate: ", FlightDate, Environment.NewLine, "FlightDateParsed: ", FlightDateParsed, Environment.NewLine, "isParsingSuccessful: ", isParsingSuccessful, Environment.NewLine, "isFlightDateValid: ", isFlightDateValid)</CSharpValue>
+                                </InArgument>
+                              </ui:LogMessage.Message>
+                            </ui:LogMessage>
+                          </Sequence>
+                        </ui:CommentOut.Body>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,404" sap2010:WorkflowViewState.IdRef="Sequence_61">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log a warning message indicating the parsing failure, including the original FlightDate and the expected format." sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Warn">
@@ -1115,7 +1157,7 @@
                 </Assign.To>
                 <Assign.Value>
                   <InArgument x:TypeArguments="x:Boolean">
-                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">isFlightDateValid &amp;&amp; isAgeValid &amp;&amp; isPostalCodeValid &amp;&amp; isFirstNameValid &amp;&amp; isLastNameValid &amp;&amp; isCityValid &amp;&amp; isStreetValid &amp;&amp; isHouseNumberValid</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_107">isFlightDateValid &amp;&amp; isAgeValid &amp;&amp; isFirstNameValid &amp;&amp; isLastNameValid &amp;&amp; isCityValid &amp;&amp; isStreetValid &amp;&amp; isHouseNumberValid</CSharpValue>
                   </InArgument>
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
@@ -1125,7 +1167,130 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+              <Assign DisplayName="Initialize dtInvalidRows by cloning the schema of dtInput." sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_69">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataTable">
+                    <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_65">dtInvalidRows</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">transactionDataTable.Clone()</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For each row in dtInput" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,315.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Validate the current row and assign the result to the isRowValid boolean variable." sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_70">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">
+                            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_66">isRowValid</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">isFirstNameValid &amp;&amp; isLastNameValid &amp;&amp; isCityValid &amp;&amp; isStreetValid &amp;&amp; isHouseNumberValid &amp;&amp; isFlightDateValid &amp;&amp; isAgeValid</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If sap2010:Annotation.AnnotationText="if statment for invalid data" DisplayName="If isRowValid is False:" sap:VirtualizedContainerService.HintSize="416,78.66666666666667" sap2010:WorkflowViewState.IdRef="If_14">
+                        <If.Condition>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">!isRowValid</CSharpValue>
+                          </InArgument>
+                        </If.Condition>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,508" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add the current row to dtInvalidRows." sap:VirtualizedContainerService.HintSize="416,223.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                              <ui:AddDataRow.ArrayRow>
+                                <InArgument x:TypeArguments="s:Object[]">
+                                  <CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">CurrentRow.ItemArray</CSharpValue>
+                                </InArgument>
+                              </ui:AddDataRow.ArrayRow>
+                              <ui:AddDataRow.DataTable>
+                                <InOutArgument x:TypeArguments="sd:DataTable">
+                                  <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_67">dtInvalidRows</CSharpReference>
+                                </InOutArgument>
+                              </ui:AddDataRow.DataTable>
+                            </ui:AddDataRow>
+                            <ui:LogMessage DisplayName="Log a message indicating the row is invalid." sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Warn">
+                              <ui:LogMessage.Message>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">"Row is invalid and has been added to the error list."</CSharpValue>
+                                </InArgument>
+                              </ui:LogMessage.Message>
+                            </ui:LogMessage>
+                            <ui:Continue DisplayName="Continue to the next row in dtInput." sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_3" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+                <ui:ForEachRow.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">transactionDataTable</CSharpValue>
+                  </InArgument>
+                </ui:ForEachRow.DataTable>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEachRow>
+              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" sap2010:Annotation.AnnotationText="logging invalid solutions" DisplayName="Write dtInvalidRows to an Excel file named ValidationErrors.xlsx." sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="InvalidRows" WorkbookPath="Output\ValidationErrors.xlsx">
+                <ui:WriteRange.DataTable>
+                  <InArgument x:TypeArguments="sd:DataTable">
+                    <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">dtInvalidRows</CSharpValue>
+                  </InArgument>
+                </ui:WriteRange.DataTable>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:WriteRange>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info">
                 <ui:LogMessage.Message>
                   <InArgument x:TypeArguments="x:Object">
                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">string.Join(", ", new string[] { isFirstNameValid ? null : "FirstName", isLastNameValid ? null : "LastName", isCityValid ? null : "City", isStreetValid ? null : "Street", isHouseNumberValid ? null : "HouseNumber", isAgeValid ? null : "Age" }.Where(s =&gt; s != null)) == "" ? "All valid" : string.Concat("Invalid fields: ", string.Join(", ", new string[] { isFirstNameValid ? null : "FirstName", isLastNameValid ? null : "LastName", isCityValid ? null : "City", isStreetValid ? null : "Street", isHouseNumberValid ? null : "HouseNumber", isAgeValid ? null : "Age" }.Where(s =&gt; s != null)))</CSharpValue>
@@ -1133,8 +1298,8 @@
                 </ui:LogMessage.Message>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
