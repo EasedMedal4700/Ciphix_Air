@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mg="clr-namespace:Microsoft.Graph;assembly=Microsoft.Graph.Core" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="UiPathEventConnector" Type="InArgument(x:String)" />
     <x:Property Name="UiPathEvent" Type="InArgument(x:String)" />
@@ -285,7 +285,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="1826,3265.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="780,2074" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="transactionDataTable" />
       <Variable x:TypeArguments="x:String" Name="dataTableString" />
@@ -358,13 +358,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,2961.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="520,1866.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,2786.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,1714.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="FirstName" />
               <Variable x:TypeArguments="x:String" Name="LastName" />
@@ -413,11 +413,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,746" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap2010:Annotation.AnnotationText="Clean spaces for the variables FirstName, LastName, CityName, and StreetName.&#xA;Rules:&#xA;- Remove leading and trailing spaces.&#xA;- Ensure there is at most one space between words.&#xA;Keep activity titles short." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="484,167.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -511,7 +511,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_35">
+              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_35">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">FlightDate</CSharpReference>
@@ -524,7 +524,7 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -597,7 +597,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,249.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence sap2010:Annotation.AnnotationText="Add two Assign activities in the current sequence.&#xA;1. Clean CityName&#xA;Set CityName = CityName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;2. Clean StreetName&#xA;Set StreetName = StreetName.Replace(&quot;.&quot;, &quot;&quot;).Replace(&quot;/&quot;, &quot;&quot;).Replace(&quot;\&quot;&quot;, &quot;&quot;)&#xA;Keep titles short.&#xA;Do not create extra sequences." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="484,200" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -691,7 +691,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
             </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+            <ui:CommentOut sap2010:Annotation.AnnotationText="old debug log" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="CommentOut_2">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
                   <sap:WorkflowViewStateService.ViewState>
@@ -718,10 +718,11 @@
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng abck to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,1440.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng back to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="484,966" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="isFlightDateValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isAgeValid" />
@@ -731,7 +732,7 @@
                 <Variable x:TypeArguments="x:Boolean" Name="isCityValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isStreetValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isHouseNumberValid" />
-                <Variable x:TypeArguments="mg:Date" Name="dateParsedSuccessfully" />
+                <Variable x:TypeArguments="s:DateTime" Name="FlightDateParsed" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -830,36 +831,221 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate FlightDate" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_44">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:Boolean">
-                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">isFlightDateValid</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:Boolean">
-                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">DateTime.Parse(FlightDate).Date &gt;= DateTime.Now.AddDays(1).Date</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
+              <Sequence sap2010:Annotation.AnnotationText="Validate the FlightDate string by attempting to parse it into FlightDateParsed, log the input and parsed value, and ensure the date is tomorrow or later while updating isFlightDateValid." sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Boolean" Name="isParsingSuccessful" />
+                </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-              <Sequence sap2010:Annotation.AnnotationText="Create an If activity to validate Age.&#xD;&#xA;&#xD;&#xA;Step 1:&#xD;&#xA;Check if Age can be converted to an integer using Integer.TryParse.&#xD;&#xA;&#xD;&#xA;Step 2:&#xD;&#xA;If the conversion succeeds, check if the parsed value is between 0 and 120.&#xD;&#xA;Both 0 and 120 are valid values.&#xD;&#xA;&#xD;&#xA;Step 3:&#xD;&#xA;If the value is within this range, set isAgeValid = True.&#xD;&#xA;Otherwise set isAgeValid = False.&#xD;&#xA;&#xD;&#xA;Step 4:&#xD;&#xA;If the Age cannot be converted to an integer, set isAgeValid = False.&#xD;&#xA;&#xD;&#xA;Keep activity titles short.&#xD;&#xA;Do not create extra sequences." DisplayName="valdiate age" sap:VirtualizedContainerService.HintSize="450,462.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                <ui:LogMessage DisplayName="Log the raw FlightDate string." sap:VirtualizedContainerService.HintSize="487.3333333333333,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Info">
+                  <ui:LogMessage.Message>
+                    <InArgument x:TypeArguments="x:Object">
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">FlightDate</CSharpValue>
+                    </InArgument>
+                  </ui:LogMessage.Message>
+                </ui:LogMessage>
+                <If DisplayName="Attempt to parse the FlightDate string into a DateTime object using the specified format. If the parsing is successful:" sap:VirtualizedContainerService.HintSize="487.3333333333333,190.66666666666666" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">DateTime.TryParseExact(FlightDate, "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out FlightDateParsed)</CSharpValue>
+                    </InArgument>
+                  </If.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="485.3333333333333,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log the successfully parsed FlightDateParsed value." sap:VirtualizedContainerService.HintSize="451.3333333333333,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="Info">
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">FlightDateParsed.ToString()</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
+                      <Assign DisplayName="Assign the boolean variable isFlightDateValid to True." sap:VirtualizedContainerService.HintSize="451.3333333333333,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_61">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">
+                            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_57">isFlightDateValid</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">true</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="485.3333333333333,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="If the parsing fails:" sap:VirtualizedContainerService.HintSize="451.3333333333333,188" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log a warning message indicating the failure, including the original FlightDate value and the expected format." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="Warn">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">string.Format("Failed to parse FlightDate: '{0}'. Expected format is dd-MM-yyyy.", FlightDate)</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Assign DisplayName="Assign the boolean variable isFlightDateValid to False." sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_62">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">
+                              <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">isFlightDateValid</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">
+                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">false</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <Assign DisplayName="Attempt to parse the FlightDate string into a Date variable (FlightDateParsed) using a specific format. The success of this parsing attempt will be stored in a boolean variable (isParsingSuccessful)." sap:VirtualizedContainerService.HintSize="487.3333333333333,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_53">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">
+                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_51">isParsingSuccessful</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">DateTime.TryParseExact(FlightDate, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out FlightDateParsed)</CSharpValue>
+                    </InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <If DisplayName="If the parsing was successful (isParsingSuccessful is True):" sap:VirtualizedContainerService.HintSize="487.3333333333333,1021.3333333333334" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">isParsingSuccessful</CSharpValue>
+                    </InArgument>
+                  </If.Condition>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,404" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log the successfully parsed date (FlightDateParsed)." sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info">
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">FlightDateParsed.ToString()</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
+                      <Assign DisplayName="Check if the parsed date is tomorrow or later and assign the boolean result to isFlightDateValid." sap:VirtualizedContainerService.HintSize="450,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_54">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">
+                            <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_52">isFlightDateValid</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">
+                            <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">DateTime.Parse(FlightDateParsed.ToString()).Date &gt;= DateTime.Now.AddDays(1).Date</CSharpValue>
+                          </InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,486.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="If the parsing failed (isParsingSuccessful is False):" sap:VirtualizedContainerService.HintSize="450,426.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_49">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log a warning message indicating the parsing failure." sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Warn">
+                          <ui:LogMessage.Message>
+                            <InArgument x:TypeArguments="x:Object">
+                              <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">"Failed to parse FlightDate."</CSharpValue>
+                            </InArgument>
+                          </ui:LogMessage.Message>
+                        </ui:LogMessage>
+                        <Assign DisplayName="Set the isFlightDateValid variable to false." sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_55">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">
+                              <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">isFlightDateValid</CSharpReference>
+                            </OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">
+                              <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">false</CSharpValue>
+                            </InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <Sequence sap2010:Annotation.AnnotationText="Validate the Age value by attempting to convert it to an integer and checking if it falls within the valid range of 0 to 120.&#xA;Set isAgeValid to true if the conversion succeeds and the value is within range; otherwise set it to false." DisplayName="valdiate age" sap:VirtualizedContainerService.HintSize="450,134.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_26">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:Int32" Name="parsedAge" />
                 </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <If DisplayName="Validate Age" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="If_3">
+                <If DisplayName="Validate Age" sap:VirtualizedContainerService.HintSize="488,1003.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
                   <If.Condition>
                     <InArgument x:TypeArguments="x:Boolean">
                       <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">Int32.TryParse(Age, out parsedAge)</CSharpValue>
@@ -867,8 +1053,8 @@
                   </If.Condition>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
@@ -876,6 +1062,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If DisplayName="Check if age is within range" sap:VirtualizedContainerService.HintSize="452,585.3333333333334" sap2010:WorkflowViewState.IdRef="If_4">
@@ -934,6 +1121,7 @@
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Assign DisplayName="Set isAgeValid to False" sap:VirtualizedContainerService.HintSize="452,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_43">
@@ -952,7 +1140,7 @@
                   </If.Else>
                 </If>
               </Sequence>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut sap2010:Annotation.AnnotationText="old check for postcode" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
@@ -984,6 +1172,7 @@
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
@@ -995,17 +1184,17 @@
                 </Assign.To>
                 <Assign.Value>
                   <InArgument x:TypeArguments="x:Boolean">
-                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">isFirstNameValid &amp;&amp; isLastNameValid &amp;&amp; isCityValid &amp;&amp; isStreetValid &amp;&amp; isHouseNumberValid &amp;&amp; isAgeValid</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">isFlightDateValid &amp;&amp; isAgeValid &amp;&amp; isPostalCodeValid &amp;&amp; isFirstNameValid &amp;&amp; isLastNameValid &amp;&amp; isCityValid &amp;&amp; isStreetValid &amp;&amp; isHouseNumberValid</CSharpValue>
                   </InArgument>
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info">
                 <ui:LogMessage.Message>
                   <InArgument x:TypeArguments="x:Object">
                     <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">string.Join(", ", new string[] { isFirstNameValid ? null : "FirstName", isLastNameValid ? null : "LastName", isCityValid ? null : "City", isStreetValid ? null : "Street", isHouseNumberValid ? null : "HouseNumber", isAgeValid ? null : "Age" }.Where(s =&gt; s != null)) == "" ? "All valid" : string.Concat("Invalid fields: ", string.Join(", ", new string[] { isFirstNameValid ? null : "FirstName", isLastNameValid ? null : "LastName", isCityValid ? null : "City", isStreetValid ? null : "Street", isHouseNumberValid ? null : "HouseNumber", isAgeValid ? null : "Age" }.Where(s =&gt; s != null)))</CSharpValue>
@@ -1013,7 +1202,7 @@
                 </ui:LogMessage.Message>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
