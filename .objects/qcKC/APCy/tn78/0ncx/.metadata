@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Straat",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "0ncxi5_hHken507tKCGnpA",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/0ncxi5_hHken507tKCGnpA",
+  "ParentRef": "LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg",
+  "Created": "2026-03-16T15:09:58.5515038Z",
+  "Updated": "2026-03-16T15:09:58.5515038Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

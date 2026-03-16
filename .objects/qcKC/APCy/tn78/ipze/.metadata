@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Alles weigeren(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "ipzeSsPVT0CICZgsL6Za8g",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/ipzeSsPVT0CICZgsL6Za8g",
+  "ParentRef": "LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg",
+  "Created": "2026-03-16T15:12:59.9840721Z",
+  "Updated": "2026-03-16T15:12:59.9840721Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
