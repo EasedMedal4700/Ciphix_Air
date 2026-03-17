@@ -1,0 +1,14 @@
+﻿{
+  "Name": "INPUT Huisnummer",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "4KSumtjh1Ei4-QOA6so6iQ",
+  "Reference": "LnKYQ0Mj0U6SNXzj59kEmQ/4KSumtjh1Ei4-QOA6so6iQ",
+  "ParentRef": "LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg",
+  "Created": "2026-03-17T10:26:18.3174334Z",
+  "Updated": "2026-03-17T10:26:18.3174334Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.20.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
