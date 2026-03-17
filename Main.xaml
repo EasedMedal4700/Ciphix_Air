@@ -289,7 +289,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="636,3275.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="780,2567.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="transactionDataTable" />
       <Variable x:TypeArguments="x:String" Name="dataTableString" />
@@ -301,8 +301,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="536,78.66666666666667" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="536,57.333333333333336" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData.xlsx">
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="678.6666666666666,78.66666666666667" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="678.6666666666666,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData.xlsx">
       <ui:ReadRange.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">transactionDataTable</CSharpReference>
@@ -310,12 +310,12 @@
       </ui:ReadRange.DataTable>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadRange>
-    <Assign DisplayName="Rename the column 'Passengerid.' in the DataTable to 'Passengerid'" sap:VirtualizedContainerService.HintSize="536,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_33">
+    <Assign DisplayName="Rename the column 'Passengerid.' in the DataTable to 'Passengerid'" sap:VirtualizedContainerService.HintSize="678.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_33">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">transactionDataTable_Columns__Passengerid____ColumnName</CSharpReference>
@@ -328,42 +328,24 @@
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:CommentOut sap2010:Annotation.AnnotationText="cosnole log" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="536,88" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-      <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_23">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_5">
-            <ui:LogMessage.Message>
-              <InArgument x:TypeArguments="x:Object">
-                <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">string.Concat("Process started | Rows=", transactionDataTable.Rows.Count.ToString())</CSharpValue>
-              </InArgument>
-            </ui:LogMessage.Message>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </ui:LogMessage>
-        </Sequence>
-      </ui:CommentOut.Body>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="678.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="Info">
+      <ui:LogMessage.Message>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">string.Concat("Process started | Rows=", transactionDataTable.Rows.Count.ToString())</CSharpValue>
+        </InArgument>
+      </ui:LogMessage.Message>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-    </ui:CommentOut>
-    <Assign DisplayName="Initialize dtInvalidRows by cloning the schema of dtInput." sap:VirtualizedContainerService.HintSize="536,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_69">
+    </ui:LogMessage>
+    <Assign DisplayName="Initialize dtInvalidRows by cloning the schema of dtInput." sap:VirtualizedContainerService.HintSize="678.6666666666666,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_69">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_72">dtInvalidRows</CSharpReference>
@@ -381,13 +363,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="882,7149.333333333332" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="678.6666666666666,1768" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="880,6997.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="676.6666666666666,1584" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="LostItem" />
               <Variable x:TypeArguments="x:String" Name="FirstName" />
@@ -411,44 +393,15 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="846,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_6">
-                    <ui:LogMessage.Message>
-                      <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">string.Concat("Row start | PassengerId=", CurrentRow["PassengerId"].ToString(), " | Flight=", CurrentRow["FlightNo"].ToString(), " | Name=", CurrentRow["FirstName"], " ", CurrentRow["LastName"])</CSharpValue>
-                      </InArgument>
-                    </ui:LogMessage.Message>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                </Sequence>
-              </ui:CommentOut.Body>
+            <Sequence sap2010:Annotation.AnnotationText="Clean whitespace in FirstName, LastName, CityName, and StreetName. Leading and trailing spaces are removed and multiple spaces between words are normalized to a single space." DisplayName="Clean Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,118.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="Clean whitespace in FirstName, LastName, CityName, and StreetName. Leading and trailing spaces are removed and multiple spaces between words are normalized to a single space." DisplayName="Sequence Clean spaces" sap:VirtualizedContainerService.HintSize="846,894" sap2010:WorkflowViewState.IdRef="Sequence_7">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the FirstName variable." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the FirstName variable." sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_12">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">FirstName</CSharpReference>
@@ -466,7 +419,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the LastName variable." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_13">
+              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the LastName variable." sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_13">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">LastName</CSharpReference>
@@ -484,7 +437,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the CityName variable." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_14">
+              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the CityName variable." sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_14">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">CityName</CSharpReference>
@@ -502,7 +455,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the StreetName variable." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign DisplayName="Remove leading/trailing spaces and reduce multiple internal spaces for the StreetName variable." sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_15">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">StreetName</CSharpReference>
@@ -520,7 +473,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign HouseNumber" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_16">
+              <Assign DisplayName="Assign HouseNumber" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_16">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">HouseNumber</CSharpReference>
@@ -538,7 +491,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_35">
+              <Assign DisplayName="Assign FlightDate" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_35">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">FlightDate</CSharpReference>
@@ -556,7 +509,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign Age" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_36">
+              <Assign DisplayName="Assign Age" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_36">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">Age</CSharpReference>
@@ -574,7 +527,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign the value from the 'Passengerid.' column of the current data row to the 'PassengerId' string variable, handling potential DBNull values." sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_73">
+              <Assign DisplayName="Assign the value from the 'Passengerid.' column of the current data row to the 'PassengerId' string variable, handling potential DBNull values." sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_73">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_70">PassengerId</CSharpReference>
@@ -592,7 +545,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign FlightNo" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_68">
+              <Assign DisplayName="Assign FlightNo" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_68">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_63">FlightNo</CSharpReference>
@@ -605,12 +558,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_79">
+              <Assign sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_79">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_77">LostItem</CSharpReference>
@@ -628,7 +581,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_14">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_88">
                     <sap:WorkflowViewStateService.ViewState>
@@ -657,109 +610,59 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-            </Sequence>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="846,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,531.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <Sequence sap2010:Annotation.AnnotationText="This sequence cleans unwanted symbols from the CityName and StreetName fields. Characters such as ., /, and \ are removed using Replace to normalize the address data before further processing." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="450,316" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Assign DisplayName="Assign the cleaned value to CityName" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_19">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">CityName</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">CityName.Replace(".", "").Replace("…", "").Replace("/", "").Replace("\"", "").Trim();</CSharpValue>
+                    </InArgument>
+                  </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap2010:Annotation.AnnotationText="voeg iets toe wat &quot;City raw: [&quot; + CityName + &quot;] | Street raw: [&quot; + StreetName + &quot;]&quot; doet" sap:VirtualizedContainerService.HintSize="450,471.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="rawCityAndStreet" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Construct the string &quot;City raw: [&quot; + CityName + &quot;] | Street raw: [&quot; + StreetName + &quot;]&quot;" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_21">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">
-                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">rawCityAndStreet</CSharpReference>
-                        </OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">"City raw: [" + CityName + "] | Street raw: [" + StreetName + "]"</CSharpValue>
-                        </InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:LogMessage DisplayName="Log the constructed string." sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info">
-                      <ui:LogMessage.Message>
-                        <InArgument x:TypeArguments="x:Object">
-                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">rawCityAndStreet</CSharpValue>
-                        </InArgument>
-                      </ui:LogMessage.Message>
-                    </ui:LogMessage>
-                  </Sequence>
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="This sequence cleans unwanted symbols from the CityName and StreetName fields. Characters such as ., /, and \ are removed using Replace to normalize the address data before further processing." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="846,674" sap2010:WorkflowViewState.IdRef="Sequence_9">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Assign the cleaned value to CityName" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_19">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">CityName</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">CityName.Replace(".", "").Replace("…", "").Replace("/", "").Replace("\"", "").Trim();</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-              <Assign DisplayName="Assign the cleaned value to StreetName" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_20">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">StreetName</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">StreetName.Replace(".", "").Replace("…", "").Replace("/", "").Replace("\"", "").Trim();</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-              <Assign DisplayName="Clean LostItem" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_75">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_74">LostItem</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172" xml:space="preserve">(string.IsNullOrWhiteSpace(LostItem)
+                </Assign>
+                <Assign DisplayName="Assign the cleaned value to StreetName" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_20">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">StreetName</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">StreetName.Replace(".", "").Replace("…", "").Replace("/", "").Replace("\"", "").Trim();</CSharpValue>
+                    </InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <Assign DisplayName="Clean LostItem" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_75">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_74">LostItem</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172" xml:space="preserve">(string.IsNullOrWhiteSpace(LostItem)
  || LostItem.Trim() == "?"
  || LostItem.Trim().ToLower() == "unknown"
  || LostItem.Trim().ToLower() == "n/a"
@@ -769,97 +672,67 @@
  || !System.Text.RegularExpressions.Regex.IsMatch(LostItem.Trim(), "[a-zA-Z]"))
 ? "an unspecified item"
 : LostItem.Trim()</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
+                    </InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+              </Sequence>
+              <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="450,218.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-            </Sequence>
-            <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="846,466.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Clean FirstName" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_22">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">FirstName</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase((FirstName ?? "").ToLower())</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-              <Assign DisplayName="Clean LastName" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_23">
-                <Assign.To>
-                  <OutArgument x:TypeArguments="x:String">
-                    <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">LastName</CSharpReference>
-                  </OutArgument>
-                </Assign.To>
-                <Assign.Value>
-                  <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39" xml:space="preserve">System.Text.RegularExpressions.Regex.Replace(
+                <Assign DisplayName="Clean FirstName" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_22">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">FirstName</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase((FirstName ?? "").ToLower())</CSharpValue>
+                    </InArgument>
+                  </Assign.Value>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Assign>
+                <Assign DisplayName="Clean LastName" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_23">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">LastName</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39" xml:space="preserve">System.Text.RegularExpressions.Regex.Replace(
     System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase((LastName ?? "").ToLower()),
     @"\b(Van|Der|Den|De|Het|Ten|Ter|Op|Aan|In)\b",
     m =&gt; m.Value.ToLower()
 )</CSharpValue>
-                  </InArgument>
-                </Assign.Value>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </Assign>
-            </Sequence>
-            <ui:CommentOut sap2010:Annotation.AnnotationText="old debug log" DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="846,88" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    </InArgument>
+                  </Assign.Value>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log alle variabelen naar de console" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info">
-                    <ui:LogMessage.Message>
-                      <InArgument x:TypeArguments="x:Object">
-                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">string.Format("Voornaam: {0}, Achternaam: {1}, Stad: {2}, Straat: {3}, Huisnummer: {4}", FirstName, LastName, CityName, StreetName, HouseNumber)</CSharpValue>
-                      </InArgument>
-                    </ui:LogMessage.Message>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:LogMessage>
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
-            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng back to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="846,1844" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                </Assign>
+              </Sequence>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="valadting the process and logigng back to me" DisplayName="Validate data" sap:VirtualizedContainerService.HintSize="642.6666666666666,88" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="isPassengerIdValid" />
                 <Variable x:TypeArguments="x:Boolean" Name="isFlightDateValid" />
@@ -876,12 +749,12 @@
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign DisplayName="Validate PassengerId" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_76">
+              <Assign DisplayName="Validate PassengerId" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_76">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_75">isPassengerIdValid</CSharpReference>
@@ -894,12 +767,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate FirstName" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_24">
+              <Assign DisplayName="Validate FirstName" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_24">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">isFirstNameValid</CSharpReference>
@@ -912,12 +785,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate LastName" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_25">
+              <Assign DisplayName="Validate LastName" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_25">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">isLastNameValid</CSharpReference>
@@ -930,12 +803,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate CityName" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_26">
+              <Assign DisplayName="Validate CityName" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_26">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">isCityValid</CSharpReference>
@@ -948,12 +821,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate StreetName" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_27">
+              <Assign DisplayName="Validate StreetName" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_27">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">isStreetValid</CSharpReference>
@@ -966,12 +839,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate HouseNumber" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_28">
+              <Assign DisplayName="Validate HouseNumber" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_28">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">isHouseNumberValid</CSharpReference>
@@ -986,12 +859,12 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Validate FlightNo" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_77">
+              <Assign DisplayName="Validate FlightNo" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_77">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_76">isFlightNoValid</CSharpReference>
@@ -1004,8 +877,8 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
@@ -1298,7 +1171,7 @@
                   </Sequence>
                 </If.Else>
               </If>
-              <Assign DisplayName="Combine validation results" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_31">
+              <Assign DisplayName="Combine validation results" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_31">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">isRowValid</CSharpReference>
@@ -1311,8 +1184,8 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
@@ -1458,290 +1331,546 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
             </Sequence>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Postcode zoeken  PostNL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,274" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V2">
-              <uix:NApplicationCard.AutoGenerationOptions>
-                <uix:GenerationOptions Prompt="Reject cookies by clicking the 'Alles weigeren' button, then fill in the 'Straat' input with the StreetName, the 'Huisnummer' input with the HouseNumber, and the 'Woonplaats' input with the CityName, and finally click the 'Zoeken' button." Url="https://www.postnl.nl/postcode-zoeken/">
-                  <uix:GenerationOptions.ExpectedInputs>
-                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                      <x:String>StreetName</x:String>
-                      <x:String>HouseNumber</x:String>
-                      <x:String>CityName</x:String>
-                    </scg:List>
-                  </uix:GenerationOptions.ExpectedInputs>
-                  <uix:GenerationOptions.ExpectedOutputs>
-                    <scg:List x:TypeArguments="x:String" Capacity="4">
-                      <x:Null />
-                    </scg:List>
-                  </uix:GenerationOptions.ExpectedOutputs>
-                </uix:GenerationOptions>
-              </uix:NApplicationCard.AutoGenerationOptions>
-              <uix:NApplicationCard.Body>
-                <ActivityAction x:TypeArguments="x:Object">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                  </ActivityAction.Argument>
-                  <Sequence sap2010:Annotation.AnnotationText="Fill in the form&#xA;" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,70" sap2010:WorkflowViewState.IdRef="Sequence_75">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <uix:NCheckState sap2010:Annotation.AnnotationText="Reject Cookies" DisplayName="Check App State 'Alles weigeren'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,736.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                      <uix:NCheckState.IfExists>
-                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,350.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_83">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alles weigeren'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,290.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                            <uix:NClick.Target>
-                              <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                            </uix:NClick.Target>
-                          </uix:NClick>
-                        </Sequence>
-                      </uix:NCheckState.IfExists>
-                      <uix:NCheckState.IfNotExists>
-                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_84">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </Sequence>
-                      </uix:NCheckState.IfNotExists>
-                      <uix:NCheckState.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NCheckState.Target>
+            <Sequence DisplayName="Process Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,1286.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_93">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Postcode zoeken  PostNL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V2">
+                <uix:NApplicationCard.AutoGenerationOptions>
+                  <uix:GenerationOptions Prompt="Reject cookies by clicking the 'Alles weigeren' button, then fill in the 'Straat' input with the StreetName, the 'Huisnummer' input with the HouseNumber, and the 'Woonplaats' input with the CityName, and finally click the 'Zoeken' button." Url="https://www.postnl.nl/postcode-zoeken/">
+                    <uix:GenerationOptions.ExpectedInputs>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>StreetName</x:String>
+                        <x:String>HouseNumber</x:String>
+                        <x:String>CityName</x:String>
+                      </scg:List>
+                    </uix:GenerationOptions.ExpectedInputs>
+                    <uix:GenerationOptions.ExpectedOutputs>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:Null />
+                      </scg:List>
+                    </uix:GenerationOptions.ExpectedOutputs>
+                  </uix:GenerationOptions>
+                </uix:NApplicationCard.AutoGenerationOptions>
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence sap2010:Annotation.AnnotationText="Fill in the form&#xA;" DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,70" sap2010:WorkflowViewState.IdRef="Sequence_75">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </uix:NCheckState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Straat'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="LocVv4JpeEasvgM3afFIxg" DesignTimeRectangle="417, 697, 360, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Straat' shadowhostid='' tag='INPUT' /&gt;" Guid="d8db7ecc-2979-4ccb-95d7-1db4fc600ec9" InformativeScreenshot="7c5e9a2c0ba098f82abae298911229a6.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/zuBA5kxYXE6DGHykB_K0iA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.Text>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_157">StreetName</CSharpValue>
-                        </InArgument>
-                      </uix:NTypeInto.Text>
-                    </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Huisnummer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="JAnkXhrq7Ue-6KX1f04qcw" DesignTimeRectangle="417, 792, 120, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Huisnummer' shadowhostid='' tag='INPUT' /&gt;" Guid="8b7aefee-5856-45e5-ace7-1dbaa0dcb0b3" InformativeScreenshot="00ffc0cdaf3ed6b73e2a59ce022a9f37.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/4KSumtjh1Ei4-QOA6so6iQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.Text>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">HouseNumber</CSharpValue>
-                        </InArgument>
-                      </uix:NTypeInto.Text>
-                    </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Woonplaats'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                      <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="N92cHhGgnEWatJjkpVlPAQ" DesignTimeRectangle="417, 886, 360, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Woonplaats' shadowhostid='' tag='INPUT' /&gt;" Guid="1abbd4e5-24c6-4d81-bf2e-49412ada05fc" InformativeScreenshot="df19b7296a6fdee98844655439efa206.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/5ELmdwOzYUuRnrLDhpyaqw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NTypeInto.Target>
-                      <uix:NTypeInto.Text>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_159">CityName</CSharpValue>
-                        </InArgument>
-                      </uix:NTypeInto.Text>
-                    </uix:NTypeInto>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoeken'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
-                      <uix:NClick.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" ContentHash="V5D4CrG9AkObE8ikCEdp3g" CvElementArea="693, 752, 107, 43" CvTextArea="717, 765, 58, 16" CvTextArgument="Zoeken" CvType="Button" DesignTimeRectangle="695, 754, 103, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' /&gt;" Guid="2b03d33c-3138-4014-b9cb-2126972b2db1" InformativeScreenshot="d46e577fbd2102f1a86205aa82df51d3.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/FxQu3t374kqoBlECDRFq5A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NClick.Target>
-                      <uix:NClick.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Target>
-                            <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="85002361-4338-41ec-9053-080511e25f14" ContentHash="T9g9rL4dYkCxWEsSM3Q-Vg" CvElementArea="693, 816, 304, 82" CvType="Button" DesignTimeRectangle="695, 818, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="ae468de2-715b-46fc-8af6-b1eb58677ae9" InformativeScreenshot="95fda1765e6f4882671cb9c4ab6ce386.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/rvDgRlhytUGMJG_gnZqN9A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                          </uix:VerifyExecutionOptions.Target>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NClick.VerifyOptions>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NClick>
-                    <uix:NGetText DisplayName="Get Text 'Adres en PostcodeWeidom…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" ScrapingMethod="TextAttribute" ScrapingOptions="None" Version="V5">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="e4882bd8-d80e-490d-9827-28e8ecf0bb74" ContentHash="LBcAhVMOvEmy6voH9P2DdQ" CvElementArea="692, 616, 305, 81" CvType="Button" DesignTimeRectangle="695, 618, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="47e7cc9e-c1ad-4864-bfa2-06482a49d424" InformativeScreenshot="2ce40c4fe9f5b376381bbbc1a7dc51d8.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/Z9IY2uvEj0uErSovGXzlgg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                      </uix:NGetText.Target>
-                      <uix:NGetText.TextString>
-                        <OutArgument x:TypeArguments="x:String">
-                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_68">postalCodePostNL</CSharpReference>
-                        </OutArgument>
-                      </uix:NGetText.TextString>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <Assign sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_71">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:String">
-                          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_69">PostalCode</CSharpReference>
-                        </OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_131" xml:space="preserve">System.Text.RegularExpressions.Regex.Match(postalCodePostNL, @"\d{4}\s?[A-Z]{2}").Success
+                      <uix:NCheckState sap2010:Annotation.AnnotationText="Reject Cookies" DisplayName="Check App State 'Alles weigeren'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,736.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                        <uix:NCheckState.IfExists>
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,350.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alles weigeren'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,290.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </uix:NCheckState.IfExists>
+                        <uix:NCheckState.IfNotExists>
+                          <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </uix:NCheckState.IfNotExists>
+                        <uix:NCheckState.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NCheckState.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NCheckState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Straat'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="LocVv4JpeEasvgM3afFIxg" DesignTimeRectangle="417, 697, 360, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Straat' shadowhostid='' tag='INPUT' /&gt;" Guid="d8db7ecc-2979-4ccb-95d7-1db4fc600ec9" InformativeScreenshot="7c5e9a2c0ba098f82abae298911229a6.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/zuBA5kxYXE6DGHykB_K0iA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_157">StreetName</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Huisnummer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="JAnkXhrq7Ue-6KX1f04qcw" DesignTimeRectangle="417, 792, 120, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Huisnummer' shadowhostid='' tag='INPUT' /&gt;" Guid="8b7aefee-5856-45e5-ace7-1dbaa0dcb0b3" InformativeScreenshot="00ffc0cdaf3ed6b73e2a59ce022a9f37.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/4KSumtjh1Ei4-QOA6so6iQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">HouseNumber</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Woonplaats'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="N92cHhGgnEWatJjkpVlPAQ" DesignTimeRectangle="417, 886, 360, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Woonplaats' shadowhostid='' tag='INPUT' /&gt;" Guid="1abbd4e5-24c6-4d81-bf2e-49412ada05fc" InformativeScreenshot="df19b7296a6fdee98844655439efa206.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/5ELmdwOzYUuRnrLDhpyaqw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_159">CityName</CSharpValue>
+                          </InArgument>
+                        </uix:NTypeInto.Text>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoeken'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" ContentHash="V5D4CrG9AkObE8ikCEdp3g" CvElementArea="693, 752, 107, 43" CvTextArea="717, 765, 58, 16" CvTextArgument="Zoeken" CvType="Button" DesignTimeRectangle="695, 754, 103, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl shadowhostid='' tag='BUTTON' /&gt;" Guid="2b03d33c-3138-4014-b9cb-2126972b2db1" InformativeScreenshot="d46e577fbd2102f1a86205aa82df51d3.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/FxQu3t374kqoBlECDRFq5A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Verification target" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="85002361-4338-41ec-9053-080511e25f14" ContentHash="T9g9rL4dYkCxWEsSM3Q-Vg" CvElementArea="693, 816, 304, 82" CvType="Button" DesignTimeRectangle="695, 818, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="ae468de2-715b-46fc-8af6-b1eb58677ae9" InformativeScreenshot="95fda1765e6f4882671cb9c4ab6ce386.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/rvDgRlhytUGMJG_gnZqN9A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Get Text 'Adres en PostcodeWeidom…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" ScrapingMethod="TextAttribute" ScrapingOptions="None" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="e4882bd8-d80e-490d-9827-28e8ecf0bb74" ContentHash="LBcAhVMOvEmy6voH9P2DdQ" CvElementArea="692, 616, 305, 81" CvType="Button" DesignTimeRectangle="695, 618, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="47e7cc9e-c1ad-4864-bfa2-06482a49d424" InformativeScreenshot="2ce40c4fe9f5b376381bbbc1a7dc51d8.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/Z9IY2uvEj0uErSovGXzlgg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NGetText.Target>
+                        <uix:NGetText.TextString>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_68">postalCodePostNL</CSharpReference>
+                          </OutArgument>
+                        </uix:NGetText.TextString>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NGetText>
+                      <Assign sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_71">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">
+                            <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_69">PostalCode</CSharpReference>
+                          </OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_131" xml:space="preserve">System.Text.RegularExpressions.Regex.Match(postalCodePostNL, @"\d{4}\s?[A-Z]{2}").Success
     ? System.Text.RegularExpressions.Regex.Match(postalCodePostNL, @"\d{4}\s?[A-Z]{2}").Value.Replace(" ", "")
     : "";</CSharpValue>
-                        </InArgument>
-                      </Assign.Value>
+                          </InArgument>
+                        </Assign.Value>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Assign>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.DialogHandling>
+                  <uix:DialogHandling DismissConfirms="True" DismissPrompts="True">
+                    <uix:DialogHandling.PromptDialogResponseText>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:DialogHandling.PromptDialogResponseText>
+                  </uix:DialogHandling>
+                </uix:NApplicationCard.DialogHandling>
+                <uix:NApplicationCard.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                  </ActivityFunc>
+                </uix:NApplicationCard.OCREngine>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="t-qOzGFzfEqC50T0pG7NDQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAtlJREFUWEe1l9tt6zAMhjlCR+gIHaEjZIS8FLDUAPUG7QbJBu0GORtkhI7gEQI0vvQtBx9NOYpiO27q/oARmJbE209SEUlwzOWu9LKsvLx1z0oWTSb36drZgZLKSVE52VdePksnOx59d3LUb17em5U8pntnAQpqJ0Wft8jKTJaVk60Z1BrTs/Ym2OH7qQey3qJzrJ1sfx2V4FEqvwaNjJMPM2R3kyGHlTxywFTv+xAb8uPUlJlssD6V34LYkMbLa/q9FzCeckvlMSjPfS53qXwIcARCc/ZoNDjUwj+au9JJXjlZpPIxRNGgsvrPD/kf8g5S1U5ymtO3l5f6WdajHvXgkMnbYEq+nCwov1QeUHvZHjLZQCwe+FJ62aTrrqEr89QIcj9GQN1oLZkw/pjhEconecAIInoSkqNM/p2tjKAcMe95SEG65hqMZ8ofi8SJc4R4LKRs1q4XPekacBHaCDZjujRrSp0Uyjttp1EJRt4Scg01RAzeI6MkUagyJ3kgMu97lMEVqoZzXDtJ+R50WETaVFwYYAfBC6y0vB0hnw2iIhAKAlMdwQCNkD+tD56mBgA9j9T3GUB+Qn9QAtrmcBBe0WTK1ot1MCBe0+Ryb/JBA5T8fQbACYtCcYD57aDJUaaKn+SBtARCYZAqRWYRuGaARtLL8oKE5jWt+R1FyKLRu0Wmj11WyLWucfKh7779puTFGCtbZJ0OL6/dvYONTTSGQwrC+9zoOIX3IG1EeITl8aa5YJHYV1k0+CyPxdnKP4Cl7Vw5CCQbGkZzoPbyotxKlYOp4/gW0LCoHHrGUAdV2G34NCBmgHZPzr12IQFzX8msBR+5B6TfezEHD8J8sO64Cz1kMuzf0DSLI6SKcSZdMwmHtudP/mNiOWY46f+BmxUHEP6xW6x6yv3wWdZazzDb68T7neIYKI6mHEOKgbTV2dAOnTa/mSwxKN0/G2yu60Tkl/aMp3+h9D/NKbJFTGfQ5gAAAABJRU5ErkJggg==" InformativeScreenshot="364a957b02cd99f6bb7ef7354e997e1b.jpg" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg" Selector="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" Url="https://www.postnl.nl/postcode-zoeken/" Version="V2">
+                    <uix:TargetApp.Arguments>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.Arguments>
+                    <uix:TargetApp.WorkingDirectory>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.WorkingDirectory>
+                  </uix:TargetApp>
+                </uix:NApplicationCard.TargetApp>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NApplicationCard>
+              <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Filling in the Word document saving it then converting the word doc to PDF" AutoSave="False" CreateNewFile="False" DisplayName="Use the Word template 'LetterOfNotice.docx' and populate it with data from the dataset." FilePath="LetterOfNotice.docx" sap:VirtualizedContainerService.HintSize="608.6666666666666,1146.6666666666667" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
+                <p:WordApplicationScope.Body>
+                  <ActivityAction x:TypeArguments="ui:WordDocument">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="606.6666666666666,993.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_86">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </Assign>
-                  </Sequence>
-                </ActivityAction>
-              </uix:NApplicationCard.Body>
-              <uix:NApplicationCard.DialogHandling>
-                <uix:DialogHandling DismissConfirms="True" DismissPrompts="True">
-                  <uix:DialogHandling.PromptDialogResponseText>
-                    <InArgument x:TypeArguments="x:String" />
-                  </uix:DialogHandling.PromptDialogResponseText>
-                </uix:DialogHandling>
-              </uix:NApplicationCard.DialogHandling>
-              <uix:NApplicationCard.OCREngine>
-                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
-                  <ActivityFunc.Argument>
-                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
-                  </ActivityFunc.Argument>
-                </ActivityFunc>
-              </uix:NApplicationCard.OCREngine>
-              <uix:NApplicationCard.TargetApp>
-                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="t-qOzGFzfEqC50T0pG7NDQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAtlJREFUWEe1l9tt6zAMhjlCR+gIHaEjZIS8FLDUAPUG7QbJBu0GORtkhI7gEQI0vvQtBx9NOYpiO27q/oARmJbE209SEUlwzOWu9LKsvLx1z0oWTSb36drZgZLKSVE52VdePksnOx59d3LUb17em5U8pntnAQpqJ0Wft8jKTJaVk60Z1BrTs/Ym2OH7qQey3qJzrJ1sfx2V4FEqvwaNjJMPM2R3kyGHlTxywFTv+xAb8uPUlJlssD6V34LYkMbLa/q9FzCeckvlMSjPfS53qXwIcARCc/ZoNDjUwj+au9JJXjlZpPIxRNGgsvrPD/kf8g5S1U5ymtO3l5f6WdajHvXgkMnbYEq+nCwov1QeUHvZHjLZQCwe+FJ62aTrrqEr89QIcj9GQN1oLZkw/pjhEconecAIInoSkqNM/p2tjKAcMe95SEG65hqMZ8ofi8SJc4R4LKRs1q4XPekacBHaCDZjujRrSp0Uyjttp1EJRt4Scg01RAzeI6MkUagyJ3kgMu97lMEVqoZzXDtJ+R50WETaVFwYYAfBC6y0vB0hnw2iIhAKAlMdwQCNkD+tD56mBgA9j9T3GUB+Qn9QAtrmcBBe0WTK1ot1MCBe0+Ryb/JBA5T8fQbACYtCcYD57aDJUaaKn+SBtARCYZAqRWYRuGaARtLL8oKE5jWt+R1FyKLRu0Wmj11WyLWucfKh7779puTFGCtbZJ0OL6/dvYONTTSGQwrC+9zoOIX3IG1EeITl8aa5YJHYV1k0+CyPxdnKP4Cl7Vw5CCQbGkZzoPbyotxKlYOp4/gW0LCoHHrGUAdV2G34NCBmgHZPzr12IQFzX8msBR+5B6TfezEHD8J8sO64Cz1kMuzf0DSLI6SKcSZdMwmHtudP/mNiOWY46f+BmxUHEP6xW6x6yv3wWdZazzDb68T7neIYKI6mHEOKgbTV2dAOnTa/mSwxKN0/G2yu60Tkl/aMp3+h9D/NKbJFTGfQ5gAAAABJRU5ErkJggg==" InformativeScreenshot="364a957b02cd99f6bb7ef7354e997e1b.jpg" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/tn78wA2aDkiYTo1L1KuMhg" Selector="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" Url="https://www.postnl.nl/postcode-zoeken/" Version="V2">
-                  <uix:TargetApp.Arguments>
-                    <InArgument x:TypeArguments="x:String" />
-                  </uix:TargetApp.Arguments>
-                  <uix:TargetApp.WorkingDirectory>
-                    <InArgument x:TypeArguments="x:String" />
-                  </uix:TargetApp.WorkingDirectory>
-                </uix:TargetApp>
-              </uix:NApplicationCard.TargetApp>
-            </uix:NApplicationCard>
-            <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Filling in the Word document saving it then converting the word doc to PDF" AutoSave="False" CreateNewFile="False" DisplayName="Use the Word template 'LetterOfNotice.docx' and populate it with data from the dataset." FilePath="LetterOfNotice.docx" sap:VirtualizedContainerService.HintSize="846,2551.3333333333335" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
-              <p:WordApplicationScope.Body>
-                <ActivityAction x:TypeArguments="ui:WordDocument">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="844,2420.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_86">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'Address' placeholder in the Word document with the corresponding 'Address' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" ReplaceAll="True" Search="Address">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_132">StreetName + " " + HouseNumber</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'PostalCode' placeholder in the Word document with the corresponding 'PostalCode' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" ReplaceAll="True" Search="PostalCode">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">PostalCode</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'City' placeholder in the Word document with the corresponding 'City' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" ReplaceAll="True" Search="City">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_134">CityName</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FirstName' placeholder in the Word document with the corresponding 'FirstName' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" ReplaceAll="True" Search="FirstName">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_135">FirstName</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'LastName' placeholder in the Word document with the corresponding 'LastName' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" ReplaceAll="True" Search="LastName">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">LastName</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FlightNumber' placeholder in the Word document with the corresponding 'FlightNo' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" ReplaceAll="True" Search="FlightNumber">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">FlightNo</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FlightDate' placeholder in the Word document with the corresponding 'FlightDate' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" ReplaceAll="True" Search="FlightDate">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_138">FlightDate</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'ItemDescription' placeholder in the Word document with the corresponding 'LostItem' value from the dataset." sap:VirtualizedContainerService.HintSize="810,224.66666666666666" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" ReplaceAll="True" Search="ItemDescription">
-                      <p:WordReplaceText.Replace>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_164">LostItem</CSharpValue>
-                        </InArgument>
-                      </p:WordReplaceText.Replace>
-                    </p:WordReplaceText>
-                    <p:WordSaveAs DisplayName="Save the modified Word document." sap:VirtualizedContainerService.HintSize="810,224" sap2010:WorkflowViewState.IdRef="WordSaveAs_1">
-                      <p:WordSaveAs.FilePath>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_145">string.Format("Output\\LetterOfNotice_{0}_{1}_{2}_{3}.docx", FirstName, LastName, PassengerId, FlightNo)</CSharpValue>
-                        </InArgument>
-                      </p:WordSaveAs.FilePath>
-                    </p:WordSaveAs>
-                    <p:WordExportToPdf DisplayName="Save Document as PDF" sap:VirtualizedContainerService.HintSize="810,172" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1">
-                      <p:WordExportToPdf.FilePath>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_147">string.Format("Output\\LetterOfNotice_{0}_{1}_{2}_{3}.pdf", FirstName, LastName, PassengerId, FlightNo)</CSharpValue>
-                        </InArgument>
-                      </p:WordExportToPdf.FilePath>
-                    </p:WordExportToPdf>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="810,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_41">
-                      <ui:LogMessage.Message>
-                        <InArgument x:TypeArguments="x:Object">
-                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_141">"TEST"</CSharpValue>
-                        </InArgument>
-                      </ui:LogMessage.Message>
-                    </ui:LogMessage>
-                  </Sequence>
-                </ActivityAction>
-              </p:WordApplicationScope.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </p:WordApplicationScope>
+                      <p:WordSetBookmarkContent BookmarkName="City" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_1">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_175">CityName</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="PostalCode" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_2">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_176">PostalCode</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="FirstName" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_3">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_177">FirstName</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="LastName" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_4">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_178">LastName</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="FlightNumber" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_5">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_179">FlightNo</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="Address" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_6">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_180">StreetName + " " + HouseNumber</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="FlightDate" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_7">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_181">FlightDate</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <p:WordSetBookmarkContent BookmarkName="ItemDescription" DisplayName="Set Bookmark Content" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_8">
+                        <p:WordSetBookmarkContent.BookmarkText>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_182">LostItem</CSharpValue>
+                          </InArgument>
+                        </p:WordSetBookmarkContent.BookmarkText>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </p:WordSetBookmarkContent>
+                      <Sequence sap2010:Annotation.AnnotationText="old way" sap:VirtualizedContainerService.HintSize="572.6666666666666,88" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'Address' placeholder in the Word document with the corresponding 'Address' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_1" ReplaceAll="True" Search="Address">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_132">StreetName + " " + HouseNumber</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_17">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'PostalCode' placeholder in the Word document with the corresponding 'PostalCode' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" ReplaceAll="True" Search="PostalCode">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_133">PostalCode</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'City' placeholder in the Word document with the corresponding 'City' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" ReplaceAll="True" Search="City">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_134">CityName</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_98">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'LastName' placeholder in the Word document with the corresponding 'LastName' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" ReplaceAll="True" Search="LastName">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">LastName</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FirstName' placeholder in the Word document with the corresponding 'FirstName' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" ReplaceAll="True" Search="FirstName">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_135">FirstName</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_21">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_99">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FlightNumber' placeholder in the Word document with the corresponding 'FlightNo' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" ReplaceAll="True" Search="FlightNumber">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">FlightNo</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_100">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'FlightDate' placeholder in the Word document with the corresponding 'FlightDate' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" ReplaceAll="True" Search="FlightDate">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_138">FlightDate</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_101">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <p:WordReplaceText Found="{x:Null}" DisplayName="Replace the 'ItemDescription' placeholder in the Word document with the corresponding 'LostItem' value from the dataset." sap:VirtualizedContainerService.HintSize="416,215.33333333333334" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" ReplaceAll="True" Search="ItemDescription">
+                                <p:WordReplaceText.Replace>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_164">LostItem</CSharpValue>
+                                  </InArgument>
+                                </p:WordReplaceText.Replace>
+                              </p:WordReplaceText>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:CommentOut>
+                      </Sequence>
+                      <p:WordSaveAs DisplayName="Save the modified Word document." sap:VirtualizedContainerService.HintSize="572.6666666666666,224" sap2010:WorkflowViewState.IdRef="WordSaveAs_1">
+                        <p:WordSaveAs.FilePath>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_145">string.Format("Output\\LetterOfNotice_{0}_{1}_{2}_{3}.docx", FirstName, LastName, PassengerId, FlightNo)</CSharpValue>
+                          </InArgument>
+                        </p:WordSaveAs.FilePath>
+                      </p:WordSaveAs>
+                      <p:WordExportToPdf DisplayName="Save Document as PDF" sap:VirtualizedContainerService.HintSize="572.6666666666666,162.66666666666666" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1">
+                        <p:WordExportToPdf.FilePath>
+                          <InArgument x:TypeArguments="x:String">
+                            <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_147">string.Format("Output\\LetterOfNotice_{0}_{1}_{2}_{3}.pdf", FirstName, LastName, PassengerId, FlightNo)</CSharpValue>
+                          </InArgument>
+                        </p:WordExportToPdf.FilePath>
+                      </p:WordExportToPdf>
+                    </Sequence>
+                  </ActivityAction>
+                </p:WordApplicationScope.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:WordApplicationScope>
+            </Sequence>
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
@@ -1756,7 +1885,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <If sap:VirtualizedContainerService.HintSize="536,181.33333333333334" sap2010:WorkflowViewState.IdRef="If_15">
+    <If DisplayName="Error check" sap:VirtualizedContainerService.HintSize="678.6666666666666,48" sap2010:WorkflowViewState.IdRef="If_15">
       <If.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_156">dtInvalidRows.Rows.Count &gt; 0</CSharpValue>
@@ -1764,22 +1893,22 @@
       </If.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_90">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="500,253.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_90">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="FilePath" />
           </Sequence.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="466,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_74">
+          <Assign DisplayName="Assign filepath" sap:VirtualizedContainerService.HintSize="466,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_74">
             <Assign.To>
               <OutArgument x:TypeArguments="x:String">
                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_73">FilePath</CSharpReference>
@@ -1790,8 +1919,14 @@
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_152">"Output\\ValidationErrors_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".xlsx"</CSharpValue>
               </InArgument>
             </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" sap2010:Annotation.AnnotationText="logging invalid solutions" DisplayName="Write dtInvalidRows to an Excel file named ValidationErrors.xlsx." sap:VirtualizedContainerService.HintSize="466,178.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="InvalidRows">
+          <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" sap2010:Annotation.AnnotationText="logging invalid solutions" DisplayName="Write dtInvalidRows to an Excel file named ValidationErrors.xlsx." sap:VirtualizedContainerService.HintSize="466,88" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="InvalidRows">
             <ui:WriteRange.DataTable>
               <InArgument x:TypeArguments="sd:DataTable">
                 <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">dtInvalidRows</CSharpValue>
@@ -1800,8 +1935,8 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:WriteRange.WorkbookPath>
@@ -1810,29 +1945,41 @@
               </InArgument>
             </ui:WriteRange.WorkbookPath>
           </ui:WriteRange>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="466,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Error">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="466,48" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Error">
             <ui:LogMessage.Message>
               <InArgument x:TypeArguments="x:Object">
                 <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_154">string.Concat("Validation completed with ", dtInvalidRows.Rows.Count.ToString(), " invalid row(s). See: ", FilePath)</CSharpValue>
               </InArgument>
             </ui:LogMessage.Message>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_91">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="500,108" sap2010:WorkflowViewState.IdRef="Sequence_91">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="466,48" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info">
             <ui:LogMessage.Message>
               <InArgument x:TypeArguments="x:Object">
                 <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_155">"Validation completed successfully. No invalid rows found."</CSharpValue>
               </InArgument>
             </ui:LogMessage.Message>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
         </Sequence>
       </If.Else>
