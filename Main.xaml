@@ -1433,71 +1433,35 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Straat'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Straat'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="950b0399-7b8a-44d8-b319-b55f55cbc78e" ContentHash="IWPn6DEqF0uZxqHXoJ9mrw" CvElementArea="693, 695, 364, 46" CvType="InputBox" DesignTimeRectangle="695, 697, 360, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Straat' shadowhostid='' tag='INPUT' type='text' class='stamp-text-input stamp-text-input--size-full' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e5e86bbf-94fd-4f41-8dd8-5669e1ce18f4" InformativeScreenshot="5ebb5e40a826e04d0bb14a2c656387df.png" IsResponsive="True" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/0ncxi5_hHken507tKCGnpA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="950b0399-7b8a-44d8-b319-b55f55cbc78e" CvTextArea="693, 671, 47, 16" CvTextArgument="Straat" CvType="Text" DesignTimeRectangle="695, 670, 44, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl shadowhostid='' tag='SPAN' type='' class='' aaname='Straat' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Straat' /&gt;" Guid="ad25745e-7f73-4b32-bfe1-613708d7c9f4" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
+                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="LocVv4JpeEasvgM3afFIxg" DesignTimeRectangle="417, 697, 360, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Straat' shadowhostid='' tag='INPUT' /&gt;" Guid="d8db7ecc-2979-4ccb-95d7-1db4fc600ec9" InformativeScreenshot="7c5e9a2c0ba098f82abae298911229a6.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/zuBA5kxYXE6DGHykB_K0iA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NTypeInto.Target>
                       <uix:NTypeInto.Text>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">StreetName</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_157">StreetName</CSharpValue>
                         </InArgument>
                       </uix:NTypeInto.Text>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Huisnummer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Huisnummer'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="2f6df3e8-434e-4da0-9b03-f97c6298e869" ContentHash="4cRsmcUUn0uBU-xVpCj4YA" CvElementArea="692, 790, 125, 47" CvType="InputBox" DesignTimeRectangle="695, 792, 120, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Huisnummer' shadowhostid='' tag='INPUT' type='text' class='stamp-text-input stamp-text-input--size-full' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d1f5edd4-6a87-4041-add5-613998be067c" InformativeScreenshot="c58782ae95a2dac49ad6ae9bce643552.png" IsResponsive="True" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/rN5b9J46MU-GNuGtsZ6cYA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="2f6df3e8-434e-4da0-9b03-f97c6298e869" CvTextArea="692, 765, 96, 16" CvTextArgument="Huisnummer" CvType="Text" DesignTimeRectangle="695, 764, 92, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl aaname='Huisnummer' shadowhostid='' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Huisnummer' /&gt;" Guid="054d50ce-faf2-466a-b92d-84c2650bcab1" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
+                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="JAnkXhrq7Ue-6KX1f04qcw" DesignTimeRectangle="417, 792, 120, 43" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Huisnummer' shadowhostid='' tag='INPUT' /&gt;" Guid="8b7aefee-5856-45e5-ace7-1dbaa0dcb0b3" InformativeScreenshot="00ffc0cdaf3ed6b73e2a59ce022a9f37.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/4KSumtjh1Ei4-QOA6so6iQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NTypeInto.Target>
                       <uix:NTypeInto.Text>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_126">HouseNumber</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_158">HouseNumber</CSharpValue>
                         </InArgument>
                       </uix:NTypeInto.Text>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
-                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Woonplaats'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT Woonplaats'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                       <uix:NTypeInto.Target>
-                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" ContentHash="wVE2g8q0F0CyQe9uOlrAvA" CvElementArea="693, 684, 364, 47" CvType="InputBox" DesignTimeRectangle="695, 686, 360, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Woonplaats' shadowhostid='' tag='INPUT' type='text' class='stamp-text-input stamp-text-input--size-full' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8bb612c9-fe6a-4af3-9b86-86493b24cc60" InformativeScreenshot="d01f395537cf4e20d106e4240579abea.png" IsResponsive="True" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/Hh1WuXaMKkS113NpFS26nQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                          <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                              <uix:Target CVScreenId="0c63e337-3a96-41c8-8401-7cef2012087d" CvTextArea="693, 660, 89, 19" CvTextArgument="Woonplaats" CvType="Text" DesignTimeRectangle="695, 659, 86, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl aaname='Woonplaats' shadowhostid='' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:shadowhostid='fuzzy' fuzzylevel:shadowhostid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Woonplaats' /&gt;" Guid="f313acf4-8ab7-4a4d-8f9e-e4b6fe1bd725" SearchSteps="FuzzySelector, CV" />
-                            </scg:List>
-                          </uix:TargetAnchorable.Anchors>
-                        </uix:TargetAnchorable>
+                        <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" ContentHash="N92cHhGgnEWatJjkpVlPAQ" DesignTimeRectangle="417, 886, 360, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl id='Woonplaats' shadowhostid='' tag='INPUT' /&gt;" Guid="1abbd4e5-24c6-4d81-bf2e-49412ada05fc" InformativeScreenshot="df19b7296a6fdee98844655439efa206.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/5ELmdwOzYUuRnrLDhpyaqw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NTypeInto.Target>
                       <uix:NTypeInto.Text>
                         <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_127">CityName</CSharpValue>
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_159">CityName</CSharpValue>
                         </InArgument>
                       </uix:NTypeInto.Text>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
                     </uix:NTypeInto>
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zoeken'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,267.3333333333333" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                       <uix:NClick.Target>
