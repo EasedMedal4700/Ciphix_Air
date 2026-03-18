@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="jkY-mG1rOk2EHpTGptj7AA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="HOl7Kpjlm0qy-Oj2D6tZqA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="f124dded2c6672f617373e062b18fa76.png" xmlns="">0P41-B9HDfkOl56owrXTcDA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="postnl.nl/postcode-zoeken" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="dc9e0ce5-a096-43ba-b722-56bf9a46b1c5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f124dded2c6672f617373e062b18fa76.png" xmlns="">0RhvQ0QPl2kWgH0dOQTM3hw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
