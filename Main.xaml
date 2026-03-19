@@ -1377,9 +1377,24 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alles weigeren'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,290.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                              <uix:NClick.DelayAfter>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:NClick.DelayAfter>
+                              <uix:NClick.DelayBefore>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:NClick.DelayBefore>
+                              <uix:NClick.InUiElement>
+                                <InArgument x:TypeArguments="ui:UiElement" />
+                              </uix:NClick.InUiElement>
+                              <uix:NClick.OutUiElement>
+                                <OutArgument x:TypeArguments="ui:UiElement" />
+                              </uix:NClick.OutUiElement>
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
+                              <uix:NClick.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:NClick.Timeout>
                             </uix:NClick>
                           </Sequence>
                         </uix:NCheckState.IfExists>
@@ -1393,7 +1408,7 @@
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="VrOdxfmKmUW1mdcp2fNlwg" DesignTimeRectangle="818, 836, 131, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="a3cb2aeb18f661535f59408b36c1f8f2.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="dc9e0ce5-a096-43ba-b722-56bf9a46b1c5" InformativeScreenshot="18de400646fda0c3d66e606a04ba5109.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NCheckState.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
