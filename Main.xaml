@@ -289,7 +289,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="780,5678" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="678.6666666666666,3655.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="transactionDataTable" />
       <Variable x:TypeArguments="x:String" Name="dataTableString" />
@@ -302,7 +302,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap:VirtualizedContainerService.HintSize="678.6666666666666,78.66666666666667" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="678.6666666666666,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData_ChatGPT.xlsx">
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DisplayName="Read data from the first sheet of InputTransactionData.xlsx into a DataTable" sap:VirtualizedContainerService.HintSize="678.6666666666666,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="InputTransactionData.xlsx">
       <ui:ReadRange.DataTable>
         <OutArgument x:TypeArguments="sd:DataTable">
           <CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">transactionDataTable</CSharpReference>
@@ -377,13 +377,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:AddDataColumn>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="678.6666666666666,5028" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Voor elke rij in de datatabel" sap:VirtualizedContainerService.HintSize="678.6666666666666,3037.3333333333335" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="676.6666666666666,4876" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="" DisplayName="Body" sap:VirtualizedContainerService.HintSize="676.6666666666666,2853.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="LostItem" />
               <Variable x:TypeArguments="x:String" Name="FirstName" />
@@ -407,11 +407,11 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence sap2010:Annotation.AnnotationText="Clean whitespace in FirstName, LastName, CityName, and StreetName. Leading and trailing spaces are removed and multiple spaces between words are normalized to a single space." DisplayName="Clean Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,1438" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <Sequence sap2010:Annotation.AnnotationText="Clean whitespace in FirstName, LastName, CityName, and StreetName. Leading and trailing spaces are removed and multiple spaces between words are normalized to a single space." DisplayName="Clean Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,118.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -579,7 +579,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
-              <Assign DisplayName="Assign LostItem" sap:VirtualizedContainerService.HintSize="450,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_79">
+              <Assign DisplayName="Assign LostItem" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_79">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">
                     <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_77">LostItem</CSharpReference>
@@ -592,8 +592,8 @@
                 </Assign.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Assign>
@@ -626,11 +626,11 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <Sequence sap2010:Annotation.AnnotationText="This sequence cleans unwanted symbols from the CityName and StreetName fields. Characters such as ., /, and \ are removed using Replace to normalize the address data before further processing." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="450,316" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <Sequence sap2010:Annotation.AnnotationText="This sequence cleans unwanted symbols from the CityName and StreetName fields. Characters such as ., /, and \ are removed using Replace to normalize the address data before further processing." DisplayName="Sequence Clean symbols" sap:VirtualizedContainerService.HintSize="450,118.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -698,11 +698,11 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </Assign>
               </Sequence>
-              <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="450,218.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <Sequence sap2010:Annotation.AnnotationText="normalizing the words, the caps" DisplayName="Normalize case" sap:VirtualizedContainerService.HintSize="450,78.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -1256,9 +1256,7 @@
                           <CSharpValue x:TypeArguments="sd:DataColumn" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">dtInvalidRows.Columns["ErrorReason"]</CSharpValue>
                         </InArgument>
                       </InvokeMethod.TargetObject>
-                      <InArgument x:TypeArguments="x:Int32">
-                        <Literal x:TypeArguments="x:Int32" Value="-1" />
-                      </InArgument>
+                      <InArgument x:TypeArguments="x:Int32">-1</InArgument>
                     </InvokeMethod>
                     <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_82">
                       <Assign.To>
@@ -1331,14 +1329,14 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
             </Sequence>
-            <Sequence DisplayName="Process Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,3259.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_93">
+            <Sequence DisplayName="Process Data" sap:VirtualizedContainerService.HintSize="642.6666666666666,2556" sap2010:WorkflowViewState.IdRef="Sequence_93">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Postcode zoeken  PostNL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608.6666666666666,2399.3333333333335" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Postcode zoeken  PostNL" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="608.6666666666666,2294.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V2">
                 <uix:NApplicationCard.AutoGenerationOptions>
                   <uix:GenerationOptions Prompt="Reject cookies by clicking the 'Alles weigeren' button, then fill in the 'Straat' input with the StreetName, the 'Huisnummer' input with the HouseNumber, and the 'Woonplaats' input with the CityName, and finally click the 'Zoeken' button." Url="https://www.postnl.nl/postcode-zoeken/">
                     <uix:GenerationOptions.ExpectedInputs>
@@ -1360,7 +1358,7 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence sap2010:Annotation.AnnotationText="Fill in the form&#xA;" DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2195.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                    <Sequence sap2010:Annotation.AnnotationText="Fill in the form&#xA;" DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2090.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_75">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1368,29 +1366,26 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NCheckState sap2010:Annotation.AnnotationText="Reject Cookies" DisplayName="Check App State 'Alles weigeren'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,768.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                      <uix:NCheckState sap2010:Annotation.AnnotationText="Reject Cookies" DisplayName="Check App State 'Alles weigeren'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,664" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,350.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                          <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,246" sap2010:WorkflowViewState.IdRef="Sequence_83">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alles weigeren'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,290.6666666666667" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alles weigeren'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" Version="V5">
                               <uix:NClick.DelayAfter>
                                 <InArgument x:TypeArguments="x:Double" />
                               </uix:NClick.DelayAfter>
                               <uix:NClick.DelayBefore>
                                 <InArgument x:TypeArguments="x:Double" />
                               </uix:NClick.DelayBefore>
-                              <uix:NClick.InUiElement>
-                                <InArgument x:TypeArguments="ui:UiElement" />
-                              </uix:NClick.InUiElement>
                               <uix:NClick.OutUiElement>
                                 <OutArgument x:TypeArguments="ui:UiElement" />
                               </uix:NClick.OutUiElement>
                               <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="94530a60-92db-477f-9fcd-5997a536a472" ContentHash="jkY-mG1rOk2EHpTGptj7AA" CvElementArea="1093, 835, 136, 44" CvTextArea="1106, 847, 109, 19" CvTextArgument="Alles weigeren" CvType="Button" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="242dc8c0-b486-42fa-a874-99499b42aadd" InformativeScreenshot="f124dded2c6672f617373e062b18fa76.png" Reference="LnKYQ0Mj0U6SNXzj59kEmQ/iCaVo2_Us02EQa-pQiC7kw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Postcode zoeken | PostNL' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;&lt;ctrl name='Alles weigeren' role='push button' /&gt;" Guid="5f41241a-56ca-46e9-9515-59ba6bad2867" InformativeScreenshot="6da339e3261e101e8867d40bfb1fc5f1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
                               </uix:NClick.Target>
                               <uix:NClick.Timeout>
                                 <InArgument x:TypeArguments="x:Double" />
@@ -1408,7 +1403,7 @@
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-COOKIE-WALL-WIDGET' /&gt;&lt;webctrl aaname='Alles weigeren' shadowhostid='' tag='BUTTON' /&gt;" Guid="dc9e0ce5-a096-43ba-b722-56bf9a46b1c5" InformativeScreenshot="18de400646fda0c3d66e606a04ba5109.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          <uix:TargetAnchorable DesignTimeRectangle="1095, 836, 132, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Postcode zoeken | PostNL' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;&lt;ctrl name='Alles weigeren' role='push button' /&gt;" Guid="80e8abfa-74c9-4f1f-ad56-c15dd33b0e45" InformativeScreenshot="cc736f8de596389e6d8e43eef65ba173.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Postcode zoeken | PostNL - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector" SelectionStrategy="UIA" Version="V6" WaitForReadyArgument="None" />
                         </uix:NCheckState.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1472,7 +1467,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NGetText DisplayName="Get Text 'Adres en PostcodeWeidom…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" ScrapingMethod="TextAttribute" ScrapingOptions="None" Version="V5">
+                      <uix:NGetText DisplayName="Get Text 'Adres en PostcodeWeidom…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="2bd358e8-fb93-47af-ae50-1b3a41fce2e4" ScrapingMethod="TextAttribute" ScrapingOptions="None" Version="V5">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="postnl.nl/postcode-zoeken" CVScreenId="e4882bd8-d80e-490d-9827-28e8ecf0bb74" CvElementArea="692, 616, 305, 81" CvType="Button" DesignTimeRectangle="695, 618, 300, 79" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='PNL-POSTALCODE-LOOKUP' /&gt;&lt;webctrl css-selector='pnl-address-postalcode-darkmode-component&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;pnl-address-message&amp;gt;div&amp;gt;div' shadowhostid='' tag='DIV' /&gt;" Guid="47e7cc9e-c1ad-4864-bfa2-06482a49d424" InformativeScreenshot="2ce40c4fe9f5b376381bbbc1a7dc51d8.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Postcode zoeken | PostNL' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                         </uix:NGetText.Target>
@@ -1542,17 +1537,17 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Filling in the Word document saving it then converting the word doc to PDF" AutoSave="False" CreateNewFile="False" DisplayName="Use the Word template 'LetterOfNotice.docx' and populate it with data from the dataset." FilePath="LetterOfNotice.docx" sap:VirtualizedContainerService.HintSize="608.6666666666666,777.3333333333334" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
+              <p:WordApplicationScope SensitivityLabel="{x:Null}" sap2010:Annotation.AnnotationText="Filling in the Word document saving it then converting the word doc to PDF" AutoSave="False" CreateNewFile="False" DisplayName="Use the Word template 'LetterOfNotice.docx' and populate it with data from the dataset." FilePath="LetterOfNotice.docx" sap:VirtualizedContainerService.HintSize="608.6666666666666,178.66666666666666" sap2010:WorkflowViewState.IdRef="WordApplicationScope_1" SensitivityOperation="None">
                 <p:WordApplicationScope.Body>
                   <ActivityAction x:TypeArguments="ui:WordDocument">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="606.6666666666666,624" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="606.6666666666666,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_86">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <p:WordSetBookmarkContent BookmarkName="City" DisplayName="Set Bookmark CityName" sap:VirtualizedContainerService.HintSize="572.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="WordSetBookmarkContent_1">
